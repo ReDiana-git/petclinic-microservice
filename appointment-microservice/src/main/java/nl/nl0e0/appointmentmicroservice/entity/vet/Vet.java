@@ -17,7 +17,7 @@ package nl.nl0e0.appointmentmicroservice.entity.vet;
 
 import jakarta.persistence.*;
 import jakarta.xml.bind.annotation.XmlElement;
-import nl.nl0e0.petclinicrefactor.entity.model.Person;
+import nl.nl0e0.appointmentmicroservice.entity.model.Person;
 import org.springframework.beans.support.MutableSortDefinition;
 import org.springframework.beans.support.PropertyComparator;
 

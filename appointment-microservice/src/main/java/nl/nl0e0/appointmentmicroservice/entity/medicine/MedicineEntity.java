@@ -5,7 +5,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Getter;
-import nl.nl0e0.petclinicrefactor.entity.medicalRecord.MedicalRecord;
+import nl.nl0e0.appointmentmicroservice.entity.MedicalRecord;
+
 
 import java.io.Serializable;
 

@@ -17,7 +17,8 @@ package nl.nl0e0.appointmentmicroservice.entity.vet;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import nl.nl0e0.petclinicrefactor.entity.model.NamedEntity;
+import nl.nl0e0.appointmentmicroservice.entity.model.NamedEntity;
+
 
 /**
  * Models a {@link Vet Vet's} specialty (for example, dentistry).

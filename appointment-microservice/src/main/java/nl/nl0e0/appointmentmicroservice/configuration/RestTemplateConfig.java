@@ -2,9 +2,10 @@ package nl.nl0e0.appointmentmicroservice.configuration;
 
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
-@Configurable
+@Configuration
 public class RestTemplateConfig {
     @Bean
     public RestTemplate restTemplate(){

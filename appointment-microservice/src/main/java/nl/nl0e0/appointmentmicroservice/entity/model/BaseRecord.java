@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 public class BaseRecord {
-	private AppointmentState state;
+	private String state;
 	private String ownerFirstName;
 	private String ownerLastName;
 	private String vetFirstName;

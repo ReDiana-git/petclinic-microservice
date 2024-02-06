@@ -16,7 +16,7 @@
 package nl.nl0e0.appointmentmicroservice.entity.owner;
 
 import jakarta.persistence.*;
-import nl.nl0e0.petclinicrefactor.entity.model.NamedEntity;
+import nl.nl0e0.appointmentmicroservice.entity.model.NamedEntity;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;

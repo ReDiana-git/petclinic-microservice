@@ -17,7 +17,8 @@ package nl.nl0e0.appointmentmicroservice.entity.owner;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import nl.nl0e0.petclinicrefactor.entity.model.NamedEntity;
+import nl.nl0e0.appointmentmicroservice.entity.model.NamedEntity;
+
 
 /**
  * @author Juergen Hoeller Can be Cat, Dog, Hamster...

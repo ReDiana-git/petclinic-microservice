@@ -19,7 +19,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
-import nl.nl0e0.petclinicrefactor.entity.model.BaseEntity;
+import nl.nl0e0.appointmentmicroservice.entity.model.BaseEntity;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;

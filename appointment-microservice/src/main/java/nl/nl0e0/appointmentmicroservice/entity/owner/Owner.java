@@ -18,7 +18,7 @@ package nl.nl0e0.appointmentmicroservice.entity.owner;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
-import nl.nl0e0.petclinicrefactor.entity.model.Person;
+import nl.nl0e0.appointmentmicroservice.entity.model.Person;
 import org.springframework.core.style.ToStringCreator;
 import org.springframework.util.Assert;
 

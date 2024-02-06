@@ -1,9 +1,7 @@
 package nl.nl0e0.appointmentmicroservice.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
 import lombok.Getter;
 import nl.nl0e0.appointmentmicroservice.entity.model.AppointmentState;
 
@@ -24,7 +22,8 @@ public class MedicalRecord implements Serializable {
 
 	@Column(name = "vet_id")
 	private Integer vetId;
-
+//	@Transient
+//	@JsonIgnore
 	@Column(name = "state")
 	private String state;
 
@@ -40,21 +39,21 @@ public class MedicalRecord implements Serializable {
 	private String medicineId = UUID.randomUUID().toString();
 
 
-	public AppointmentState getState(){
-		switch(state){
-			case "init":
-				return AppointmentState.INIT;
-			case "consultation":
-				return AppointmentState.CONSULTAION;
-			case "payment":
-				return AppointmentState.PAYMENT;
-			case "medicine":
-				return AppointmentState.MEDICINE;
-			case "done":
-				return AppointmentState.DONE;
-		}
-		return null;
-	}
+//	public AppointmentState getStateWithState(){
+//		switch(state){
+//			case "init":
+//				return AppointmentState.INIT;
+//			case "consultation":
+//				return AppointmentState.CONSULTAION;
+//			case "payment":
+//				return AppointmentState.PAYMENT;
+//			case "medicine":
+//				return AppointmentState.MEDICINE;
+//			case "done":
+//				return AppointmentState.DONE;
+//		}
+//		return null;
+//	}
 
 	public String getState2String(){
 		return state;
