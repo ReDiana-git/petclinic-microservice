@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package nl.nl0e0.appointmentmicroservice.entity.owner;
+package nl.nl0e0.consultationmicroservice.entity.owner;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
-import nl.nl0e0.appointmentmicroservice.entity.model.Person;
+import nl.nl0e0.consultationmicroservice.entity.model.Person;
 import org.springframework.core.style.ToStringCreator;
 import org.springframework.util.Assert;
 
@@ -63,8 +63,8 @@ public class Owner extends Person {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getCity() {
 
+	public String getCity() {
 		return this.city;
 	}
 

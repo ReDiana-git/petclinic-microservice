@@ -106,4 +106,8 @@ public class AppointmentService {
 				return false;
 		}
 	}
+
+    public MedicalRecord getMedicalRecordById(String id) {
+		return medicalRecordService.findByRecordId(id);
+    }
 }

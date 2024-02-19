@@ -31,4 +31,6 @@ public class AppointmentRestTemplate {
         ResponseEntity<PaymentEntity> paymentResult = restTemplate.postForEntity(paymentUrl + "deletePayment", null, PaymentEntity.class);
         ResponseEntity<MedicineEntity> medicineResult = restTemplate.postForEntity(medicineUrl + "deleteMedicine", null, MedicineEntity.class);
     }
+
+
 }
