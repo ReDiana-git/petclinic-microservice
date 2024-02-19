@@ -7,6 +7,7 @@ import nl.nl0e0.consultationmicroservice.entity.consultation.UpdateConsultationD
 import nl.nl0e0.consultationmicroservice.entity.medicine.MedicineEntity;
 import nl.nl0e0.consultationmicroservice.entity.medicine.SetMedicineDTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -36,6 +37,8 @@ public class ConsultationRestTemplate {
     public void setState(String recordId, String state){
         SetStateDTO setStateDTO = new SetStateDTO(recordId, state);
         ResponseEntity<?> result = restTemplate.postForEntity(appointmentUrl + "/setState", setStateDTO, String.class);
+        if(result.getStatusCode() != HttpStatus.OK)
+            throw new RuntimeException("set State failed!");
     }
 
     public void setMedicine(String medicineId, String medicines) {

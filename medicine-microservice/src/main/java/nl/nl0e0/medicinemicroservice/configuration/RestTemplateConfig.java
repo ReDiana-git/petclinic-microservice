@@ -1,4 +1,4 @@
-package nl.nl0e0.appointmentmicroservice.configuration;
+package nl.nl0e0.medicinemicroservice.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

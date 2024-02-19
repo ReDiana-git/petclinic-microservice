@@ -60,8 +60,15 @@ public class AppointmentController {
 
 	@PostMapping("/appointment/setState")
 	public ResponseEntity<?> setState(@RequestBody SetStateDTO setStateDTO){
-		appointmentService.setState(setStateDTO);
-		return ResponseEntity.status(HttpStatus.OK).build();
+		try{
+			appointmentService.setState(setStateDTO);
+			return ResponseEntity.status(HttpStatus.OK).build();
+		}catch (Exception exception){
+			Map<String, Object> body = new LinkedHashMap<>();
+			body.put("timestamp", LocalDateTime.now());
+			body.put("message", exception.getMessage());
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(body);
+		}
 	}
 
 	@PostMapping("/delete")
