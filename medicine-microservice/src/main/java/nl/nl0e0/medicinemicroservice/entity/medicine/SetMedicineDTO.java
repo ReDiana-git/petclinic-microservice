@@ -1,4 +1,4 @@
-package nl.nl0e0.consultationmicroservice.entity.medicine;
+package nl.nl0e0.medicinemicroservice.entity.medicine;
 
 import lombok.Getter;
 import lombok.Setter;

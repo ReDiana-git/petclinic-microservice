@@ -20,7 +20,7 @@ public class ConsultationController {
     ConsultationService consultationService;
 
     //給醫生查看病歷
-    @GetMapping("/appointment/consultation/{id}")
+    @GetMapping("/appointment/consultation/{recordId}")
     public ResponseEntity<?> checkConsultation(@PathVariable String recordId){
         CheckConsultationDTO checkConsultationDTO = consultationService.checkConsultation(recordId);
         return ResponseEntity.status(HttpStatus.OK).body(checkConsultationDTO);

@@ -1,7 +1,9 @@
 package nl.nl0e0.consultationmicroservice.entity.consultation;
 
 import lombok.Getter;
+import lombok.Setter;
 
+@Setter
 @Getter
 public class UpdateConsultationDTO {
 

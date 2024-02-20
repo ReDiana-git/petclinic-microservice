@@ -17,7 +17,7 @@ package nl.nl0e0.medicinemicroservice.entity.vet;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import nl.nl0e0.appointmentmicroservice.entity.model.NamedEntity;
+import nl.nl0e0.medicinemicroservice.entity.model.NamedEntity;
 
 
 /**

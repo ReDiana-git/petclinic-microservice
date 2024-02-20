@@ -19,7 +19,7 @@ public class ConsultationRestTemplate {
     @Autowired
     RestTemplate restTemplate;
 
-    String appointmentUrl = "http://localhost:8084/appointment";
+    String appointmentUrl = "http://localhost:8080/appointment";
     String medicineUrl = "http://localhost:8083/appointment";
 
     public MedicalRecord getRecordById(String recordId){
@@ -43,6 +43,6 @@ public class ConsultationRestTemplate {
 
     public void setMedicine(String medicineId, String medicines) {
         SetMedicineDTO setMedicineDTO = new SetMedicineDTO(medicineId, medicines);
-        ResponseEntity<?> result = restTemplate.postForEntity(medicineUrl + "/medicine", setMedicineDTO, MedicineEntity.class);
+        ResponseEntity<?> result = restTemplate.postForEntity(medicineUrl + "/medicine", setMedicineDTO, String.class);
     }
 }

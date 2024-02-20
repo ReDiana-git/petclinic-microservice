@@ -2,11 +2,15 @@ package nl.nl0e0.medicinemicroservice.controller;
 
 
 import nl.nl0e0.medicinemicroservice.entity.medicine.MedicineCounterDTO;
+import nl.nl0e0.medicinemicroservice.entity.medicine.MedicineEntity;
+import nl.nl0e0.medicinemicroservice.entity.medicine.SetMedicineDTO;
 import nl.nl0e0.medicinemicroservice.service.MedicineService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -18,8 +22,8 @@ import java.util.Map;
 public class MedicineController {
     @Autowired
     MedicineService medicineService;
-    @PostMapping("/appointment/medicineCounter")
-    public ResponseEntity<?> medicineCounter(@RequestBody String recordId){
+    @GetMapping("/appointment/medicineCounter/{recordId}")
+    public ResponseEntity<?> medicineCounter(@PathVariable String recordId){
         try{
             MedicineCounterDTO medicineCounterDTO = medicineService.medicineCounter(recordId);
             return ResponseEntity.status(HttpStatus.OK).body(medicineCounterDTO);
@@ -32,6 +36,16 @@ public class MedicineController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(body);
         }
 
+    }
+    @GetMapping("/appointment/medicine/{recordId}")
+    public ResponseEntity<?> getMedicine(@PathVariable String recordId){
+        MedicineEntity medicineEntity = medicineService.findMedicineByRecordId(recordId);
+        return ResponseEntity.status(HttpStatus.OK).body(medicineEntity);
+    }
+
+    @PostMapping("/appointment/medicine")
+    public ResponseEntity<?> setMedicine(@RequestBody SetMedicineDTO setMedicineDTO){
+        MedicineEntity medicineEntity = medicineService.setMedicine(setMedicineDTO);
     }
 
 }

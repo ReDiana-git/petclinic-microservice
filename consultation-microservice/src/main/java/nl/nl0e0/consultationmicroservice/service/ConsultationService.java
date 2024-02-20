@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 public class ConsultationService {
     @Autowired
     ConsultationRepository consultationRepository;
+    @Autowired
     ConsultationRestTemplate consultationRestTemplate;
 
     public void createConsultation(MedicalRecord medicalRecord){
@@ -30,6 +31,7 @@ public class ConsultationService {
 
     public CheckConsultationDTO checkConsultation(String recordId) {
         MedicalRecord record = consultationRestTemplate.getRecordById(recordId);
+        System.out.println(record);
         ConsultationEntity consultationEntity = consultationRepository.findById(record.getConsultationId());
         MedicineEntity medicineEntity = consultationRestTemplate.getMedicineById(record.getMedicineId());
         consultationRestTemplate.setState(recordId, "consultation");

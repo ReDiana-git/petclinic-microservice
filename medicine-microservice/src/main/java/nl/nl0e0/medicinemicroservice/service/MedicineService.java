@@ -3,6 +3,7 @@ package nl.nl0e0.medicinemicroservice.service;
 import nl.nl0e0.medicinemicroservice.entity.MedicalRecord;
 import nl.nl0e0.medicinemicroservice.entity.medicine.MedicineCounterDTO;
 import nl.nl0e0.medicinemicroservice.entity.medicine.MedicineEntity;
+import nl.nl0e0.medicinemicroservice.entity.medicine.SetMedicineDTO;
 import nl.nl0e0.medicinemicroservice.repository.MedicineRepositroy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 public class MedicineService {
     @Autowired
     MedicineRepositroy repositroy;
-
+    @Autowired
     MedicineRestTemplate restTemplate;
 
 
@@ -43,4 +44,14 @@ public class MedicineService {
         return new MedicineCounterDTO(recordId, "done");
     }
 
+    public MedicineEntity findMedicineByRecordId(String recordId) {
+        MedicalRecord medicalRecord = restTemplate.getRecordById(recordId);
+        MedicineEntity medicineEntity = repositroy.findById(medicalRecord.getMedicineId());
+        return medicineEntity;
+    }
+
+    public MedicineEntity setMedicine(SetMedicineDTO setMedicineDTO) {
+        MedicalRecord medicalRecord = restTemplate.getRecordById(setMedicineDTO.getRecordId());
+        repositroy.updateMedicines(setMedicineDTO.get);
+    }
 }
