@@ -50,8 +50,8 @@ public class MedicineService {
         return medicineEntity;
     }
 
-    public MedicineEntity setMedicine(SetMedicineDTO setMedicineDTO) {
+    public void setMedicine(SetMedicineDTO setMedicineDTO) {
         MedicalRecord medicalRecord = restTemplate.getRecordById(setMedicineDTO.getRecordId());
-        repositroy.updateMedicines(setMedicineDTO.get);
+//        repositroy.updateMedicines();
     }
 }

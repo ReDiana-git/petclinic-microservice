@@ -45,7 +45,8 @@ public class MedicineController {
 
     @PostMapping("/appointment/medicine")
     public ResponseEntity<?> setMedicine(@RequestBody SetMedicineDTO setMedicineDTO){
-        MedicineEntity medicineEntity = medicineService.setMedicine(setMedicineDTO);
+        medicineService.setMedicine(setMedicineDTO);
+        return ResponseEntity.status(HttpStatus.OK).build();
     }
 
 }
