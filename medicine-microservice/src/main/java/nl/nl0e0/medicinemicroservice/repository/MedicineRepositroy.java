@@ -14,6 +14,9 @@ public interface MedicineRepositroy extends Repository<MedicineEntity,String> {
 	@Transactional
 	void updateMedicines(@Param("medicines") String medicines, @Param("medicineId") String medicineId);
 
+
+	void deleteMedicineEntitiesById(String medicineId);
+
 	MedicineEntity findById(String medicineId);
 
     void deleteAll();

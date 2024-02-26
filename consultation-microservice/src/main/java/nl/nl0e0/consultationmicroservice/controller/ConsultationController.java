@@ -27,10 +27,23 @@ public class ConsultationController {
     }
 
     //給醫生更新病歷
-    @PostMapping("/appoint/updateConsultation")
+    @PostMapping("/appointment/updateConsultation")
     public ResponseEntity<?> updateConsultation(@RequestBody UpdateConsultationDTO updateConsultationDTO){
         System.out.println("updateConsultationDTO Object in Controller\n" + updateConsultationDTO);
         consultationService.updateConsultation(updateConsultationDTO);
         return ResponseEntity.status(HttpStatus.CREATED).build();
+    }
+
+    //讓 Appointment microservice 可以新增病歷
+    @PostMapping("/appointment/createConsultation")
+    public ResponseEntity<?> createConsultation(@RequestBody String recordId){
+        consultationService.createConsultation(recordId);
+        return ResponseEntity.status(HttpStatus.CREATED).build();
+    }
+
+    @PostMapping("/appointment/deleteConsultation")
+    public ResponseEntity<?> deleteConsultation(){
+        consultationService.deleteAll();
+        return ResponseEntity.status(HttpStatus.OK).build();
     }
 }

@@ -15,8 +15,9 @@ public class PaymentService {
 
     PaymentRestTemplate restTemplate;
 
-    public void createPayment(MedicalRecord medicalRecord){
-        PaymentEntity payment = new PaymentEntity(medicalRecord);
+    public void createPayment(String recordId){
+        PaymentEntity payment = new PaymentEntity();
+        payment.setId(recordId);
         repository.save(payment);
     }
 

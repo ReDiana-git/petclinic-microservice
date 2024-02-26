@@ -17,12 +17,12 @@ public class MedicineService {
     MedicineRestTemplate restTemplate;
 
 
-    public void createMedicine(MedicalRecord medicalRecord){
-        MedicineEntity medicine = new MedicineEntity(medicalRecord);
+    public MedicineEntity createMedicine(String recordId){
+        MedicineEntity medicine = new MedicineEntity();
+        medicine.setId(recordId);
         repositroy.save(medicine);
-    }
-    public void updateMedicine(String MedicineId, String medicines){
-        repositroy.updateMedicines(medicines, MedicineId);
+
+        return medicine;
     }
 
     public MedicineEntity findRecordById(String recordId){
@@ -52,6 +52,6 @@ public class MedicineService {
 
     public void setMedicine(SetMedicineDTO setMedicineDTO) {
         MedicalRecord medicalRecord = restTemplate.getRecordById(setMedicineDTO.getRecordId());
-//        repositroy.updateMedicines();
+        repositroy.updateMedicines(setMedicineDTO.getMedicines(), medicalRecord.getMedicineId());
     }
 }

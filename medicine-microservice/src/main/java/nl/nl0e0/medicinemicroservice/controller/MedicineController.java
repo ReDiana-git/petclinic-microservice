@@ -32,7 +32,7 @@ public class MedicineController {
             body.put("timestamp", LocalDateTime.now());
             body.put("message", exception.getMessage());
 
-            // 返回包含自定义错误信息和HTTP状态码的ResponseEntity
+            // 返回包含自定義錯誤訊息和HTTP狀態碼
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(body);
         }
 
@@ -46,6 +46,16 @@ public class MedicineController {
     @PostMapping("/appointment/medicine")
     public ResponseEntity<?> setMedicine(@RequestBody SetMedicineDTO setMedicineDTO){
         medicineService.setMedicine(setMedicineDTO);
+        return ResponseEntity.status(HttpStatus.OK).build();
+    }
+    @PostMapping("/appointment/createMedicine")
+    public ResponseEntity<?> createMedicine(@RequestBody String recordId){
+        medicineService.createMedicine(recordId);
+        return ResponseEntity.status(HttpStatus.CREATED).build();
+    }
+    @PostMapping("/appointment/deleteMedicine")
+    public ResponseEntity<?> deleteMedicine(){
+        medicineService.deleteAll();
         return ResponseEntity.status(HttpStatus.OK).build();
     }
 

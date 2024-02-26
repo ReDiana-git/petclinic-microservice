@@ -4,28 +4,17 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
 import nl.nl0e0.paymentmicroservice.entity.MedicalRecord;
 
 import java.io.Serializable;
 
 @Entity
+@Setter
+@Getter
 @Table(name = "payment")
 public class PaymentEntity implements Serializable {
-
-	public Integer getPrice() {
-		return price;
-	}
-	public void setPrice(Integer price) {
-		this.price = price;
-	}
-
-	public void setPaymentStatus(boolean paymentStatus) {
-		this.paymentStatus = paymentStatus;
-	}
-
-	public String getId() {
-		return id;
-	}
 
 	public boolean getPaymentStatus() {
 		return paymentStatus;

@@ -28,4 +28,5 @@ public class ConsultationEntity implements Serializable {
 	public ConsultationEntity(MedicalRecord medicalRecord){
 		this.id = medicalRecord.getConsultationId();
 	}
+
 }

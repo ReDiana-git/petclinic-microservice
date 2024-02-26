@@ -15,7 +15,7 @@ public class MedicineRestTemplate {
     @Autowired
     RestTemplate restTemplate;
 
-    String appointmentUrl = "http://localhost:8084/appointment";
+    String appointmentUrl = "http://localhost:8080/appointment";
     
     public MedicalRecord getRecordById(String recordId) {
         ResponseEntity<MedicalRecord> medicalRecordResult = restTemplate.getForEntity(appointmentUrl + "/medicalRecord/" + recordId, MedicalRecord.class);

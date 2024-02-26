@@ -17,8 +17,9 @@ public class ConsultationService {
     @Autowired
     ConsultationRestTemplate consultationRestTemplate;
 
-    public void createConsultation(MedicalRecord medicalRecord){
-        ConsultationEntity consultationEntity = new ConsultationEntity(medicalRecord);
+    public void createConsultation(String recordId){
+        ConsultationEntity consultationEntity = new ConsultationEntity();
+        consultationEntity.setId(recordId);
         consultationRepository.save(consultationEntity);
     }
 
