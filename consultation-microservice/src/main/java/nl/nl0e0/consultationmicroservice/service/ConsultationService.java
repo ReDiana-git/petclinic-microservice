@@ -20,6 +20,7 @@ public class ConsultationService {
     public void createConsultation(String recordId){
         ConsultationEntity consultationEntity = new ConsultationEntity();
         consultationEntity.setId(recordId);
+        consultationEntity.setSymptom("");
         consultationRepository.save(consultationEntity);
     }
 
@@ -34,7 +35,7 @@ public class ConsultationService {
         MedicalRecord record = consultationRestTemplate.getRecordById(recordId);
         System.out.println(record);
         ConsultationEntity consultationEntity = consultationRepository.findById(record.getConsultationId());
-        MedicineEntity medicineEntity = consultationRestTemplate.getMedicineById(record.getMedicineId());
+        MedicineEntity medicineEntity = consultationRestTemplate.getMedicineById(recordId);
         consultationRestTemplate.setState(recordId, "consultation");
         return new CheckConsultationDTO(consultationEntity.getSymptom(),
                 medicineEntity.getMedicines(),

@@ -28,8 +28,8 @@ public class ConsultationRestTemplate {
         return medicalRecordResult.getBody();
     }
 
-    public MedicineEntity getMedicineById(String medicineId) {
-        ResponseEntity<MedicineEntity> medicineResult = restTemplate.getForEntity(medicineUrl + "/medicine/" + medicineId, MedicineEntity.class);
+    public MedicineEntity getMedicineById(String recordId) {
+        ResponseEntity<MedicineEntity> medicineResult = restTemplate.getForEntity(medicineUrl + "/medicine/" + recordId, MedicineEntity.class);
 
         return medicineResult.getBody();
     }
