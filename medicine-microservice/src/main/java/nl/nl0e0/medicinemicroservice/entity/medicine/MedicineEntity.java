@@ -25,7 +25,10 @@ public class MedicineEntity implements Serializable {
 	public MedicineEntity() {
 
 	}
-
+	public MedicineEntity(String id){
+		this.id = id;
+		this.medicines = "";
+	}
 
 	public MedicineEntity(MedicalRecord medicalRecord){
 		this.id = medicalRecord.getMedicineId();

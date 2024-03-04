@@ -3,9 +3,11 @@ package nl.nl0e0.appointmentmicroservice.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Getter
+@Setter
 public class SetStateDTO {
     @Id
     String recordId;

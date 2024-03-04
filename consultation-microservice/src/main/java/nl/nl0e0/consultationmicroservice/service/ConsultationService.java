@@ -17,9 +17,9 @@ public class ConsultationService {
     @Autowired
     ConsultationRestTemplate consultationRestTemplate;
 
-    public void createConsultation(String recordId){
+    public void createConsultation(String consultationId){
         ConsultationEntity consultationEntity = new ConsultationEntity();
-        consultationEntity.setId(recordId);
+        consultationEntity.setId(consultationId);
         consultationEntity.setSymptom("");
         consultationRepository.save(consultationEntity);
     }
@@ -46,7 +46,7 @@ public class ConsultationService {
 
     public void updateConsultation(UpdateConsultationDTO updateConsultationDTO) {
         MedicalRecord medicalRecord = consultationRestTemplate.getRecordById(updateConsultationDTO.getRecordId());
-        consultationRestTemplate.setMedicine(medicalRecord.getMedicineId(),updateConsultationDTO.getMedicines());
+        consultationRestTemplate.setMedicine(medicalRecord.getId(),updateConsultationDTO.getMedicines());
         consultationRepository.updateSymptom(medicalRecord.getConsultationId(), updateConsultationDTO.getSymptom());
         consultationRestTemplate.setState(medicalRecord.getId(), "payment");
     }

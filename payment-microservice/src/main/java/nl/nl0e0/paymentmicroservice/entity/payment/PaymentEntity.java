@@ -30,6 +30,11 @@ public class PaymentEntity implements Serializable {
 		this.id = medicalRecord.getPaymentId();
 		this.paymentStatus = false;
 	}
+	public PaymentEntity(String id){
+		this.id = id;
+		this.price = 0;
+		this.paymentStatus = false;
+	}
 	public PaymentEntity(){
 
 	}

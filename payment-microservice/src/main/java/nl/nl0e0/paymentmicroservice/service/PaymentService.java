@@ -12,12 +12,12 @@ import org.springframework.stereotype.Service;
 public class PaymentService {
     @Autowired
     PaymentRepository repository;
-
+    @Autowired
     PaymentRestTemplate restTemplate;
 
-    public void createPayment(String recordId){
+    public void createPayment(String paymentId){
         PaymentEntity payment = new PaymentEntity();
-        payment.setId(recordId);
+        payment.setId(paymentId);
         repository.save(payment);
     }
 

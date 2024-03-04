@@ -26,6 +26,7 @@ public class MedicineController {
     public ResponseEntity<?> medicineCounter(@PathVariable String recordId){
         try{
             MedicineCounterDTO medicineCounterDTO = medicineService.medicineCounter(recordId);
+            System.out.println(medicineCounterDTO.getState());
             return ResponseEntity.status(HttpStatus.OK).body(medicineCounterDTO);
         }catch (Exception exception){
             Map<String, Object> body = new LinkedHashMap<>();
@@ -45,12 +46,13 @@ public class MedicineController {
 
     @PostMapping("/appointment/medicine")
     public ResponseEntity<?> setMedicine(@RequestBody SetMedicineDTO setMedicineDTO){
+        System.out.println(setMedicineDTO);
         medicineService.setMedicine(setMedicineDTO);
         return ResponseEntity.status(HttpStatus.OK).build();
     }
     @PostMapping("/appointment/createMedicine")
-    public ResponseEntity<?> createMedicine(@RequestBody String recordId){
-        medicineService.createMedicine(recordId);
+    public ResponseEntity<?> createMedicine(@RequestBody String medicineId){
+        medicineService.createMedicine(medicineId);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
     @PostMapping("/appointment/deleteMedicine")

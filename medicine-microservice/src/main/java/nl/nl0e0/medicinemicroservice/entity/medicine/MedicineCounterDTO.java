@@ -1,5 +1,8 @@
 package nl.nl0e0.medicinemicroservice.entity.medicine;
 
+import lombok.Getter;
+
+@Getter
 public class MedicineCounterDTO {
     String recordId;
     String state;

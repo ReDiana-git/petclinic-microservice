@@ -58,40 +58,32 @@ public class MedicalRecord implements Serializable {
 	public String getState2String(){
 		return state;
 	}
-	public void setState(AppointmentState state){
-		switch (state){
-			case INIT -> this.state = "init";
-			case PAYMENT -> this.state = "payment";
-			case CONSULTAION -> this.state = "consultation";
-			case MEDICINE -> this.state = "medicine";
-			case DONE -> this.state = "done";
-		}
+//	public void setState(AppointmentState state){
+//		switch (state){
+//			case INIT -> this.state = "init";
+//			case PAYMENT -> this.state = "payment";
+//			case CONSULTAION -> this.state = "consultation";
+//			case MEDICINE -> this.state = "medicine";
+//			case DONE -> this.state = "done";
+//		}
+//	}
+	public void setState(String state){
+		this.state = state;
 	}
-	public boolean setState(String state){
-		if(checkChangeStateAvailable(state) || state.equals(this.state)){
-			this.state = state;
-			return true;
-		}
-		else{
-			return false;
-		}
-
-
-	}
-	public boolean checkChangeStateAvailable(String setState){
-		switch (setState){
-			case "consultation" :
-				return this.state.equals("init");
-			case "payment":
-				return this.state.equals("consultation");
-			case "medicine":
-				return this.state.equals("payment");
-			case "done":
-				return this.state.equals("medicine");
-			default:
-				return false;
-		}
-	}
+//	public boolean checkChangeStateAvailable(String setState){
+//		switch (setState){
+//			case "consultation" :
+//				return this.state.equals("init");
+//			case "payment":
+//				return this.state.equals("consultation");
+//			case "medicine":
+//				return this.state.equals("payment");
+//			case "done":
+//				return this.state.equals("medicine");
+//			default:
+//				return false;
+//		}
+//	}
 
 	public MedicalRecord(CreateAppointmentDTO dto) {
 		this.ownerId = dto.getOwnerId();

@@ -21,9 +21,9 @@ public class AppointmentRestTemplate {
     String paymentUrl = "http://localhost:8082/appointment/";
     String medicineUrl = "http://localhost:8083/appointment/";
     public void createNewRecord(MedicalRecord medicalRecord){
-        ResponseEntity<ConsultationEntity> consultationResult = restTemplate.postForEntity(consultationUrl + "createConsultation", medicalRecord, ConsultationEntity.class);
-        ResponseEntity<PaymentEntity> paymentResult = restTemplate.postForEntity(paymentUrl + "createPayment", medicalRecord, PaymentEntity.class);
-        ResponseEntity<MedicineEntity> medicineResult = restTemplate.postForEntity(medicineUrl + "createMedicine", medicalRecord, MedicineEntity.class);
+        ResponseEntity<ConsultationEntity> consultationResult = restTemplate.postForEntity(consultationUrl + "createConsultation", medicalRecord.getConsultationId(), ConsultationEntity.class);
+        ResponseEntity<PaymentEntity> paymentResult = restTemplate.postForEntity(paymentUrl + "createPayment", medicalRecord.getPaymentId(), PaymentEntity.class);
+        ResponseEntity<MedicineEntity> medicineResult = restTemplate.postForEntity(medicineUrl + "createMedicine", medicalRecord.getMedicineId(), MedicineEntity.class);
     }
 
     public void deleteAllRecord(){

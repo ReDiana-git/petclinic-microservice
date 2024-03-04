@@ -1,11 +1,8 @@
 package nl.nl0e0.appointmentmicroservice.service;
 
-import lombok.Getter;
-import nl.nl0e0.appointmentmicroservice.entity.model.AppointmentState;
 import nl.nl0e0.appointmentmicroservice.entity.model.BaseRecord;
 import nl.nl0e0.appointmentmicroservice.entity.owner.Owner;
 import nl.nl0e0.appointmentmicroservice.repository.OwnerRepository;
-import nl.nl0e0.appointmentmicroservice.service.MedicalRecordService;
 import nl.nl0e0.appointmentmicroservice.entity.*;
 import nl.nl0e0.appointmentmicroservice.entity.MedicalRecord;
 import nl.nl0e0.appointmentmicroservice.repository.AppointmentRepository;
@@ -75,15 +72,11 @@ public class AppointmentService {
 		medicalRecordService.deleteAll();
 		appointmentRestTemplate.deleteAllRecord();
 	}
-//
+
 	public AppointmentEntity findAppointment(String appointmentId) {
 		return appointmentRepository.findById(appointmentId);
 	}
-//
-//	public void checkValid(OwnerNameDTO ownerNameDTO) {
-//
-//	}
-//
+
     public void setState(SetStateDTO setStateDTO) {
 		MedicalRecord medicalRecord = medicalRecordService.findByRecordId(setStateDTO.getRecordId());
 		if(checkChangeStateAvailable(setStateDTO ,medicalRecord.getState())){
@@ -102,6 +95,8 @@ public class AppointmentService {
                 return currentState.equals("consultation");
 			case "medicine":
 				return currentState.equals("payment");
+			case "done":
+				return currentState.equals("medicine");
 			default:
 				return false;
 		}

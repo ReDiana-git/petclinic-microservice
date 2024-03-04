@@ -13,14 +13,14 @@ import org.springframework.web.client.RestTemplate;
 @Getter
 public class PaymentRestTemplate {
 
-    String appointmentUrl = "http://localhost:8084/appointment";
+    String appointmentUrl = "http://localhost:8080/appointment";
 
     @Autowired
     RestTemplate restTemplate;
 
     public MedicalRecord getRecordById(String recordId) {
         ResponseEntity<MedicalRecord> medicalRecordResult = restTemplate.getForEntity(appointmentUrl + "/medicalRecord/" + recordId, MedicalRecord.class);
-
+        System.out.println(medicalRecordResult.getBody());
         return medicalRecordResult.getBody();
     }
     public void setState(String recordId, String state) {

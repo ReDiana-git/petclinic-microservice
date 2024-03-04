@@ -2,6 +2,7 @@ package nl.nl0e0.paymentmicroservice.controller;
 
 
 import nl.nl0e0.paymentmicroservice.entity.payment.PaymentDTO;
+import nl.nl0e0.paymentmicroservice.entity.payment.PaymentEntity;
 import nl.nl0e0.paymentmicroservice.entity.payment.PaymentInfoDTO;
 import nl.nl0e0.paymentmicroservice.entity.payment.PaymentSucessDTO;
 import nl.nl0e0.paymentmicroservice.service.PaymentService;
@@ -34,6 +35,7 @@ public class PaymentController {
     public ResponseEntity<?> payment(@RequestBody PaymentDTO paymentDTO){
         try{
             PaymentSucessDTO paymentSucessDTO = paymentService.payment(paymentDTO);
+            System.out.println(paymentSucessDTO.toString());
             return ResponseEntity.status(HttpStatus.OK).body(paymentSucessDTO);
         }catch (Exception exception){
             Map<String, Object> body = new LinkedHashMap<>();
@@ -45,8 +47,8 @@ public class PaymentController {
 
     // 讓 Appointment microservice 可以新增 Payment
     @PostMapping("/appointment/createPayment")
-    public ResponseEntity<?> createPayment(@RequestBody String recordId){
-        paymentService.createPayment(recordId);
+    public ResponseEntity<?> createPayment(@RequestBody String paymentId){
+        paymentService.createPayment(paymentId);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 

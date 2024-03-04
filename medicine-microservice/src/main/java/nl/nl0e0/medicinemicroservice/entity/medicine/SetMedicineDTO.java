@@ -12,4 +12,9 @@ public class SetMedicineDTO {
         this.recordId = recordId;
         this.medicines = medicines;
     }
+
+    @Override
+    public String toString() {
+        return "recordId: " + recordId + "\nmedicines: " + medicines;
+    }
 }

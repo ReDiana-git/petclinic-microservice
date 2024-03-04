@@ -24,7 +24,8 @@ public class ConsultationRestTemplate {
 
     public MedicalRecord getRecordById(String recordId){
         ResponseEntity<MedicalRecord> medicalRecordResult = restTemplate.getForEntity(appointmentUrl + "/medicalRecord/" + recordId, MedicalRecord.class);
-
+        System.out.println("get record from restTemplate");
+        System.out.println(medicalRecordResult.getBody());
         return medicalRecordResult.getBody();
     }
 

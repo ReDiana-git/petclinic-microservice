@@ -7,9 +7,9 @@ import lombok.Setter;
 @Getter
 public class SetMedicineDTO {
     String recordId;
-    String state;
-    public SetMedicineDTO(String recordId, String state){
+    String medicines;
+    public SetMedicineDTO(String recordId, String medicines){
         this.recordId = recordId;
-        this.state = state;
+        this.medicines = medicines;
     }
 }

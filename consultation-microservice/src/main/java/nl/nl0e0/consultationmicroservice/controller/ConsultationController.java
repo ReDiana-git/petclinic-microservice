@@ -2,6 +2,7 @@ package nl.nl0e0.consultationmicroservice.controller;
 
 import lombok.Getter;
 import nl.nl0e0.consultationmicroservice.entity.consultation.CheckConsultationDTO;
+import nl.nl0e0.consultationmicroservice.entity.consultation.ConsultationEntity;
 import nl.nl0e0.consultationmicroservice.entity.consultation.UpdateConsultationDTO;
 import nl.nl0e0.consultationmicroservice.service.ConsultationService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,8 +37,8 @@ public class ConsultationController {
 
     //讓 Appointment microservice 可以新增病歷
     @PostMapping("/appointment/createConsultation")
-    public ResponseEntity<?> createConsultation(@RequestBody String recordId){
-        consultationService.createConsultation(recordId);
+    public ResponseEntity<?> createConsultation(@RequestBody String consultationId){
+        consultationService.createConsultation(consultationId);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 

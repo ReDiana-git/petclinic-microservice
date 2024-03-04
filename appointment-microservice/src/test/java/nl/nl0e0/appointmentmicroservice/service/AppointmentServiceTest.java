@@ -39,25 +39,11 @@ public class AppointmentServiceTest {
     @BeforeEach
     public void setUp() {
 
-        this.server = MockRestServiceServer.createServer(appointmentService.getRestTemplate());
-        // 配置Mock Server響應
-
-        server.expect(requestTo("http://localhost:8081/appointment/createConsultation"))
-                .andRespond(withSuccess("{\"status\":\"success\"}", MediaType.APPLICATION_JSON));
-        server.expect(requestTo("http://localhost:8082/appointment/createPayment"))
-                .andRespond(withSuccess("{\"status\":\"success\"}", MediaType.APPLICATION_JSON));
-        server.expect(requestTo("http://localhost:8083/appointment/createMedicine"))
-                .andRespond(withSuccess("{\"status\":\"success\"}", MediaType.APPLICATION_JSON));
-        server.expect(requestTo("http://localhost:8081/appointment/deleteConsultation"))
-                .andRespond(withSuccess("{\"status\":\"success\"}", MediaType.APPLICATION_JSON));
-        server.expect(requestTo("http://localhost:8082/appointment/deletePayment"))
-                .andRespond(withSuccess("{\"status\":\"success\"}", MediaType.APPLICATION_JSON));
-        server.expect(requestTo("http://localhost:8083/appointment/deleteMedicine"))
-                .andRespond(withSuccess("{\"status\":\"success\"}", MediaType.APPLICATION_JSON));
     }
 
     @Test
     public void createAppointmentTest(){
+        this.server = MockRestServiceServer.createServer(appointmentService.getRestTemplate());
         server.expect(requestTo("http://localhost:8081/appointment/createConsultation"))
                 .andRespond(withSuccess("{\"status\":\"success\"}", MediaType.APPLICATION_JSON));
         server.expect(requestTo("http://localhost:8082/appointment/createPayment"))
@@ -90,6 +76,7 @@ public class AppointmentServiceTest {
 
     @Test
     public void deleteAllTest(){
+        this.server = MockRestServiceServer.createServer(appointmentService.getRestTemplate());
         server.expect(requestTo("http://localhost:8081/appointment/deleteConsultation"))
                 .andRespond(withSuccess("{\"status\":\"success\"}", MediaType.APPLICATION_JSON));
         server.expect(requestTo("http://localhost:8082/appointment/deletePayment"))
@@ -101,12 +88,5 @@ public class AppointmentServiceTest {
 
         assertThat(appointmentRepository.findAll()).isEmpty();
         server = null;
-    }
-
-    @Test
-    public void testChangeStateInit2Consultation(){
-        SetStateDTO setStateDTO = new SetStateDTO("", "consultation");
-        boolean result = appointmentService.checkChangeStateAvailable(setStateDTO, "init");
-        assertThat(result).isEqualTo(true);
     }
 }

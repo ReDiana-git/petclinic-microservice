@@ -11,6 +11,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.client.MockRestServiceServer;
 
+import java.util.UUID;
+
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -51,15 +53,16 @@ public class MedicineServiceTest {
 
     @Test
     public void testCreateMedicine(){
-        String recordId = "123";
-        mockMedicineService.createMedicine(recordId);
+        MedicineEntity medicineEntity = new MedicineEntity();
+        medicineEntity.setId(UUID.randomUUID().toString());
+        mockMedicineService.createMedicine(UUID.randomUUID().toString());
 
         MedicineEntity medicine = new MedicineEntity();
         medicine.setId(recordId);
 
         // 验证repository.save是否被正确调用，并且是用了正确的MedicineEntity对象
         verify(medicineRepository, times(1)).save(any(MedicineEntity.class));
-        medicineRepository.deleteMedicineEntitiesById(recordId);
+        medicineRepository.deleteMedicineEntitiesById(medicineEntity.getId());
     }
 
     @Test
