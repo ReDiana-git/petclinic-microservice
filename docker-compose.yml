@@ -1,0 +1,16 @@
+services:
+  appointment-microservice:
+    build: ./appointment-microservice
+    network_mode: "host"
+
+  consultation-microservice:
+    build: ./consultation-microservice
+    network_mode: "host"
+
+  medicine-microservice:
+    build: ./medicine-microservice
+    network_mode: "host"
+
+  payment-microservice:
+    build: ./payment-microservice
+    network_mode: "host"

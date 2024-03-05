@@ -37,3 +37,7 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+bootJar {
+    mainClass = 'nl.nl0e0.appointmentmicroservice.AppointmentMicroserviceApplication'
+}
