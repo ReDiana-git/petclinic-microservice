@@ -1,7 +1,8 @@
 plugins {
     id 'java'
     id 'org.springframework.boot' version '3.2.2'
-    id 'io.spring.dependency-management' version '1.1.4'
+    id 'io.spring.dependency-management' version '1.1.4'// 例如 '3.0.3'
+//    id 'org.springframework.cloud.contract' version "4.0.6"
 }
 
 group = 'nl.nl0e0'
@@ -32,7 +33,13 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     // https://mvnrepository.com/artifact/org.assertj/assertj-core
     testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.24.2'
+    // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-contract-verifier
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-contract-verifier', version: '2021.0.4.5'
 }
+
+
+// 不需要 'buildscript' 和 'apply plugin' 部分
+
 
 tasks.named('test') {
     useJUnitPlatform()
@@ -41,3 +48,10 @@ tasks.named('test') {
 bootJar {
     mainClass = 'nl.nl0e0.appointmentmicroservice.AppointmentMicroserviceApplication'
 }
+
+//contracts {
+//    contractDependency {
+//        stringNotation = "nl.nl0e0:+:stubs:8080"
+//    }
+//    baseClassForTests = "nl.nl0e0.contract"
+//}
