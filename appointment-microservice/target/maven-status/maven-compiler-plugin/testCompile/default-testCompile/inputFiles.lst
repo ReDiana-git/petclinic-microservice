@@ -1,0 +1,8 @@
+/Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/AppointmentMicroserviceApplicationTests.java
+/Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/controller/AppointmentControllerTest.java
+/Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/repository/AppointmentRepositoryTest.java
+/Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/service/AppointmentRecordBuilderTest.java
+/Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/service/AppointmentServiceTest.java
+/Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/service/AppointmentServiceUnitTest.java
+/Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/service/AppointmentRestTemplateTest.java
+/Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/controller/AppointmentControllerUnitTest.java

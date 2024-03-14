@@ -2,7 +2,6 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.2.2'
     id 'io.spring.dependency-management' version '1.1.4'// 例如 '3.0.3'
-//    id 'org.springframework.cloud.contract' version "4.0.6"
 }
 
 group = 'nl.nl0e0'
@@ -34,7 +33,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.assertj/assertj-core
     testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.24.2'
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-contract-verifier
-    implementation group: 'org.springframework.cloud', name: 'spring-cloud-contract-verifier', version: '2021.0.4.5'
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-contract-verifier', version: '4.1.1'
 }
 
 
