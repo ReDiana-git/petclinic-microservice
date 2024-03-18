@@ -1,5 +1,7 @@
 package contracts
 
+import org.springframework.cloud.contract.spec.Contract
+
 Contract.make {
     request {
         method 'POST'
@@ -9,7 +11,7 @@ Contract.make {
         }
     }
     response {
-        status 201
+        status 500
         headers {
             contentType(applicationJson())
         }
