@@ -4,7 +4,7 @@ FROM gradle:jdk17 as build
 WORKDIR /app
 
 # 複製 Gradle 配置文件
-COPY build.gradle settings.gradle ./
+COPY build.gradle.bak settings.gradle ./
 
 # 複製源代碼
 COPY src src

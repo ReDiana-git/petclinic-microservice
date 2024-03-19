@@ -84,7 +84,32 @@
             <version>4.0.0</version>
         </dependency>
 
-        <!-- Others omitted for brevity -->
+<!--        &lt;!&ndash; 添加 RestAssured 依赖 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.rest-assured</groupId>-->
+<!--            <artifactId>rest-assured</artifactId>-->
+<!--            <version>4.3.3</version> &lt;!&ndash; 使用最新的版本或适合你项目的版本 &ndash;&gt;-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+        <!-- 对于 Spring MVC 项目，也需要添加 rest-assured-spring-mockmvc -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>spring-mock-mvc</artifactId>
+            <version>4.3.3</version> <!-- 同上，确保版本一致 -->
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- For compatibility -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -105,14 +130,13 @@
             <plugin>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-contract-maven-plugin</artifactId>
+                <extensions>true</extensions>
                 <version>4.1.1</version>
                 <configuration>
-                    <testFramework>JUNIT5</testFramework>
-                    <packageWithBaseClasses>nl.nl0e0</packageWithBaseClasses>
                     <baseClassMappings>
                         <baseClassMapping>
-                            <contractPackageRegex>.*contracts.*</contractPackageRegex>
-                            <baseClassFQN>nl.nl0e0</baseClassFQN>
+                            <contractPackageRegex>.*</contractPackageRegex>
+                            <baseClassFQN>nl.nl0e0.appointmentmicroservice.contract.BaseTest</baseClassFQN>
                         </baseClassMapping>
                     </baseClassMappings>
                 </configuration>

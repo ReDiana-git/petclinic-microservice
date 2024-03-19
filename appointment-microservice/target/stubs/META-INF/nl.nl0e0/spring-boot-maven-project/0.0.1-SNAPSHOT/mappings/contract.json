@@ -1,0 +1,20 @@
+{
+  "id" : "fed8f7d3-24e2-4884-84ea-e6b7102f2045",
+  "request" : {
+    "url" : "/appointment/createAppointments",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    }
+  },
+  "response" : {
+    "status" : 500,
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "fed8f7d3-24e2-4884-84ea-e6b7102f2045"
+}
