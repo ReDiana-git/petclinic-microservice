@@ -11,9 +11,9 @@ Contract.make {
         }
     }
     response {
-        status 500
-        headers {
-            contentType(applicationJson())
-        }
+        status 200
+//        headers {
+//            contentType(applicationJson())
+//        }
     }
 }

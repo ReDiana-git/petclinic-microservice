@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>nl.nl0e0</groupId>
-    <artifactId>spring-boot-maven-project</artifactId>
+    <artifactId>appointment-microservice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
         <java.version>17</java.version>
-        <spring.boot.version>3.2.2</spring.boot.version>
+        <spring.boot.version>3.2.0</spring.boot.version>
         <spring.cloud.version>4.1.1</spring.cloud.version>
     </properties>
 
@@ -83,19 +83,10 @@
             <artifactId>jakarta.xml.bind-api</artifactId>
             <version>4.0.0</version>
         </dependency>
-
-<!--        &lt;!&ndash; 添加 RestAssured 依赖 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>io.rest-assured</groupId>-->
-<!--            <artifactId>rest-assured</artifactId>-->
-<!--            <version>4.3.3</version> &lt;!&ndash; 使用最新的版本或适合你项目的版本 &ndash;&gt;-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
         <!-- 对于 Spring MVC 项目，也需要添加 rest-assured-spring-mockmvc -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>spring-mock-mvc</artifactId>
-            <version>4.3.3</version> <!-- 同上，确保版本一致 -->
             <scope>test</scope>
         </dependency>
         <dependency>
