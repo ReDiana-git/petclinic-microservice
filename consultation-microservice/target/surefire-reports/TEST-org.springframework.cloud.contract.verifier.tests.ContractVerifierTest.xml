@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="nl.nl0e0.consultationmicroservice.service.ConsultationRestTemplateTest" time="0.111" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.springframework.cloud.contract.verifier.tests.ContractVerifierTest" time="2.761" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -49,7 +49,7 @@
     <property name="localRepository" value="/Users/rediana/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="java.io.tmpdir" value="/var/folders/bd/lgl244492mn6hgm7k6jjgyd40000gn/T/"/>
-    <property name="com.zaxxer.hikari.pool_number" value="2"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
     <property name="java.version" value="21.0.2"/>
     <property name="user.dir" value="/Users/rediana/Project/petclinic-microservice/consultation-microservice"/>
     <property name="os.arch" value="x86_64"/>
@@ -66,10 +66,19 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testGetRecordById" classname="nl.nl0e0.consultationmicroservice.service.ConsultationRestTemplateTest" time="0.042">
-    <system-out><![CDATA[2024-03-25T20:29:10.146+08:00  INFO 5400 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [nl.nl0e0.consultationmicroservice.service.ConsultationRestTemplateTest]: ConsultationRestTemplateTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-03-25T20:29:10.154+08:00  INFO 5400 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration nl.nl0e0.consultationmicroservice.ConsultationMicroserviceApplication for test class nl.nl0e0.consultationmicroservice.service.ConsultationRestTemplateTest
+  <testcase name="validate_contract" classname="org.springframework.cloud.contract.verifier.tests.ContractVerifierTest" time="0.689">
+    <failure message="&#10;expected: 201&#10; but was: 404" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
 
+expected: 201
+ but was: 404
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at org.springframework.cloud.contract.verifier.tests.ContractVerifierTest.validate_contract(ContractVerifierTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
@@ -78,15 +87,32 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2024-03-25T20:29:10.165+08:00  INFO 5400 --- [           main] n.n.c.s.ConsultationRestTemplateTest     : Starting ConsultationRestTemplateTest using Java 21.0.2 with PID 5400 (started by rediana in /Users/rediana/Project/petclinic-microservice/consultation-microservice)
-2024-03-25T20:29:10.165+08:00  INFO 5400 --- [           main] n.n.c.s.ConsultationRestTemplateTest     : No active profile set, falling back to 1 default profile: "default"
-2024-03-25T20:29:10.212+08:00  INFO 5400 --- [           main] n.n.c.s.ConsultationRestTemplateTest     : Started ConsultationRestTemplateTest in 0.057 seconds (process running for 4.323)
-get record from restTemplate
-Record ID: 1b30186a-7f40-4d82-b40c-23ef9ee73b54
-Appointment ID: 742fd30e-b958-4bb4-9845-a7a5b9f36a1a
-Consultation ID: 691d91dd-2a80-4144-ad88-9b5cf32813c6
-Payment ID: 691d91dd-2a80-4144-ad88-9b5cf32813c6
-Medicine ID: 162c0824-a496-4fef-b207-90cc181e9c0f
+2024-03-25T20:29:06.643+08:00  INFO 5400 --- [           main] o.s.c.c.v.tests.ContractVerifierTest     : Starting ContractVerifierTest using Java 21.0.2 with PID 5400 (started by rediana in /Users/rediana/Project/petclinic-microservice/consultation-microservice)
+2024-03-25T20:29:06.644+08:00  INFO 5400 --- [           main] o.s.c.c.v.tests.ContractVerifierTest     : No active profile set, falling back to 1 default profile: "default"
+2024-03-25T20:29:07.128+08:00  INFO 5400 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-25T20:29:07.147+08:00  INFO 5400 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2024-03-25T20:29:07.383+08:00  INFO 5400 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-25T20:29:07.508+08:00  INFO 5400 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2744dcae
+2024-03-25T20:29:07.509+08:00  INFO 5400 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-25T20:29:07.537+08:00  INFO 5400 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-25T20:29:07.575+08:00  INFO 5400 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-03-25T20:29:07.600+08:00  INFO 5400 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-25T20:29:07.755+08:00  INFO 5400 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-25T20:29:07.990+08:00  INFO 5400 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-25T20:29:07.993+08:00  INFO 5400 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-25T20:29:08.086+08:00  WARN 5400 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-25T20:29:08.321+08:00  INFO 5400 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-25T20:29:08.321+08:00  INFO 5400 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-25T20:29:08.322+08:00  INFO 5400 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-03-25T20:29:08.332+08:00  INFO 5400 --- [           main] o.s.c.c.v.tests.ContractVerifierTest     : Started ContractVerifierTest in 1.837 seconds (process running for 2.442)
+2024-03-25T20:29:08.873+08:00  INFO 5400 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-03-25T20:29:08.873+08:00  INFO 5400 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-03-25T20:29:08.874+08:00  INFO 5400 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
 ]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/rediana/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
   </testcase>
 </testsuite>

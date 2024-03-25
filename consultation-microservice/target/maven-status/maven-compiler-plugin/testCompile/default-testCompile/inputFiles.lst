@@ -1,3 +1,6 @@
+/Users/rediana/Project/petclinic-microservice/consultation-microservice/src/test/java/nl/nl0e0/consultationmicroservice/contract/BaseTest.java
 /Users/rediana/Project/petclinic-microservice/consultation-microservice/src/test/java/nl/nl0e0/consultationmicroservice/service/ConsultationRestTemplateTest.java
+/Users/rediana/Project/petclinic-microservice/consultation-microservice/src/test/java/nl/nl0e0/consultationmicroservice/contract/ConsumerContractTest.java
 /Users/rediana/Project/petclinic-microservice/consultation-microservice/src/test/java/nl/nl0e0/consultationmicroservice/service/ConsultationServiceTest.java
 /Users/rediana/Project/petclinic-microservice/consultation-microservice/src/test/java/nl/nl0e0/consultationmicroservice/ConsultationMicroserviceApplicationTests.java
+/Users/rediana/Project/petclinic-microservice/consultation-microservice/target/generated-test-sources/contracts/org/springframework/cloud/contract/verifier/tests/ContractVerifierTest.java

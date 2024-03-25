@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: nl.nl0e0.consultationmicroservice.service.ConsultationServiceTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.093 s <<< FAILURE! -- in nl.nl0e0.consultationmicroservice.service.ConsultationServiceTest
-nl.nl0e0.consultationmicroservice.service.ConsultationServiceTest.testCheckConsultation -- Time elapsed: 0.046 s <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.103 s <<< FAILURE! -- in nl.nl0e0.consultationmicroservice.service.ConsultationServiceTest
+nl.nl0e0.consultationmicroservice.service.ConsultationServiceTest.testCheckConsultation -- Time elapsed: 0.050 s <<< FAILURE!
 java.lang.AssertionError: Request URI expected:<http://localhost:8083/appointment/medicine/c3f865b1-4b3c-4c0a-9bc2-7c703f2ba99e> but was:<http://localhost:8083/appointment/medicine/317498db-9841-408a-b01d-6f7d4d8da4fc>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)

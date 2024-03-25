@@ -1,0 +1,20 @@
+{
+  "id" : "950b4928-cac4-442a-93cc-33c083b2f08b",
+  "request" : {
+    "url" : "/appointment/createConsultation",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['consultationId'] == '12345')]"
+    } ]
+  },
+  "response" : {
+    "status" : 201,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "950b4928-cac4-442a-93cc-33c083b2f08b"
+}

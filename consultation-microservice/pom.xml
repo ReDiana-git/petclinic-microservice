@@ -110,35 +110,35 @@
 
     <build>
 <!--在 provider 端進行 contract test -->
-<!--        <pluginManagement>-->
-<!--            <plugins>-->
-<!--                <plugin>-->
-<!--                    <groupId>org.springframework.cloud</groupId>-->
-<!--                    <artifactId>spring-cloud-contract-maven-plugin</artifactId>-->
-<!--                    <version>4.1.1</version>-->
-<!--                </plugin>-->
-<!--            </plugins>-->
-<!--        </pluginManagement>-->
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.cloud</groupId>
+                    <artifactId>spring-cloud-contract-maven-plugin</artifactId>
+                    <version>4.1.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.springframework.cloud</groupId>-->
-<!--                <artifactId>spring-cloud-contract-maven-plugin</artifactId>-->
-<!--                <extensions>true</extensions>-->
-<!--                <version>4.1.1</version>-->
-<!--                <configuration>-->
-<!--                    <baseClassMappings>-->
-<!--                        <baseClassMapping>-->
-<!--                            <contractPackageRegex>.*</contractPackageRegex>-->
-<!--                            <baseClassFQN>nl.nl0e0.appointmentmicroservice.contract.BaseTest</baseClassFQN>-->
-<!--                        </baseClassMapping>-->
-<!--                    </baseClassMappings>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-            <!--在 provider 端進行 contract test -->
+            <plugin>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-contract-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <version>4.1.1</version>
+                <configuration>
+                    <baseClassMappings>
+                        <baseClassMapping>
+                            <contractPackageRegex>.*</contractPackageRegex>
+                            <baseClassFQN>nl.nl0e0.consultationmicroservice.contract.BaseTest</baseClassFQN>
+                        </baseClassMapping>
+                    </baseClassMappings>
+                </configuration>
+            </plugin>
+<!--            在 provider 端進行 contract test -->
 
             <!-- Other plugins like maven-compiler-plugin can be configured here -->
         </plugins>
