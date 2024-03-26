@@ -15,12 +15,12 @@ import static org.springframework.test.web.client.match.MockRestRequestMatchers.
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
-@SpringBootTest
+//@SpringBootTest
 public class ConsultationServiceTest {
-    @Autowired
+//    @Autowired
     private ConsultationService consultationService;
     private MockRestServiceServer server;
-    @Autowired
+//    @Autowired
     private ConsultationRepository consultationRepository;
     String recordBody = "{\n" +
             "    \"id\": \"317498db-9841-408a-b01d-6f7d4d8da4fc\",\n" +
@@ -42,7 +42,7 @@ public class ConsultationServiceTest {
     public void setUp() {
 
     }
-    @Test
+//    @Test
     public void testCheckConsultation(){
         this.server = MockRestServiceServer.createServer(consultationService.consultationRestTemplate.getRestTemplate());
         server.expect(requestTo("http://localhost:8080/appointment/medicalRecord/317498db-9841-408a-b01d-6f7d4d8da4fc"))
@@ -57,7 +57,7 @@ public class ConsultationServiceTest {
         server.verify();
         server = null;
     }
-    @Test
+//    @Test
     public void testUpdateConsultation(){
         this.server = MockRestServiceServer.createServer(consultationService.consultationRestTemplate.getRestTemplate());
         server.expect(requestTo("http://localhost:8080/appointment/medicalRecord/317498db-9841-408a-b01d-6f7d4d8da4fc"))

@@ -20,6 +20,11 @@ public class ConsultationController {
     @Autowired
     ConsultationService consultationService;
 
+//    private final ResponseProvider responseProvider;
+//    public ConsultationController(ResponseProvider responseProvider){
+//        this.responseProvider = responseProvider;
+//    }
+
     //給醫生查看病歷
     @GetMapping("/appointment/consultation/{recordId}")
     public ResponseEntity<?> checkConsultation(@PathVariable String recordId){

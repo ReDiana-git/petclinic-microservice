@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.context.WebApplicationContext;
 
 import static org.mockito.Mockito.*;
-@SpringBootTest(classes = BaseTest.Config.class)
+@SpringBootTest
 @AutoConfigureMockMvc
 public class BaseTest {
 
@@ -26,9 +26,9 @@ public class BaseTest {
         RestAssuredMockMvc.webAppContextSetup(this.webApplicationContext);
 
     }
-    @Configuration
-    @EnableAutoConfiguration
-    static class Config{
-
-    }
+//    @Configuration
+//    @EnableAutoConfiguration
+//    static class Config{
+//
+//    }
 }

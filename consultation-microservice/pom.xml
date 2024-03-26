@@ -100,16 +100,10 @@
             <artifactId>junit-jupiter-engine</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-contract-stub-runner</artifactId>
-            <version>4.1.1</version>
-            <scope>test</scope>
-        </dependency>
+
     </dependencies>
 
     <build>
-<!--在 provider 端進行 contract test -->
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -138,7 +132,7 @@
                     </baseClassMappings>
                 </configuration>
             </plugin>
-<!--            在 provider 端進行 contract test -->
+
 
             <!-- Other plugins like maven-compiler-plugin can be configured here -->
         </plugins>

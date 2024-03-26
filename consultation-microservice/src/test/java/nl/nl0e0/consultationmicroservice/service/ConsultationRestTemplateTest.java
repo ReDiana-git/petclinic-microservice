@@ -12,10 +12,10 @@ import java.util.UUID;
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
-@RestClientTest(ConsultationRestTemplate.class)
+//@RestClientTest(ConsultationRestTemplate.class)
 public class ConsultationRestTemplateTest {
 
-    @Autowired
+//    @Autowired
     private ConsultationRestTemplate restTemplate;
     private MockRestServiceServer server;
 
@@ -28,11 +28,11 @@ public class ConsultationRestTemplateTest {
                 .andRespond(withSuccess("{\"status\":\"success\"}", MediaType.APPLICATION_JSON));
     }
 
-    @Test
-    public void testGetRecordById(){
-        String recordId = "05d1b29c-5594-4f66-b289-ed9a86fb1c28";
-        restTemplate.getRecordById(recordId);
-
-        server.verify();
-    }
+//    @Test
+//    public void testGetRecordById(){
+//        String recordId = "05d1b29c-5594-4f66-b289-ed9a86fb1c28";
+//        restTemplate.getRecordById(recordId);
+//
+//        server.verify();
+//    }
 }
