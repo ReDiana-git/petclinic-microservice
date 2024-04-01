@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: org.springframework.cloud.contract.verifier.tests.ContractVerifierTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.923 s <<< FAILURE! -- in org.springframework.cloud.contract.verifier.tests.ContractVerifierTest
+org.springframework.cloud.contract.verifier.tests.ContractVerifierTest.validate_contract -- Time elapsed: 0.486 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+expected: 200
+ but was: 400
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at org.springframework.cloud.contract.verifier.tests.ContractVerifierTest.validate_contract(ContractVerifierTest.java:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

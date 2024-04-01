@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.web.context.WebApplicationContext;
 
-@SpringBootTest(classes = nl.nl0e0.consultationmicroservice.configuration.RestTemplateConfig.class)
+@SpringBootTest(classes = nl.nl0e0.consultationmicroservice.ConsultationMicroserviceApplication.class)
 @AutoConfigureMockMvc
 public class BaseTest {
     @Autowired
@@ -28,16 +28,4 @@ public class BaseTest {
         RestAssuredMockMvc.webAppContextSetup(this.webApplicationContext);
 
     }
-//    @Configuration
-//    @EnableAutoConfiguration
-//    static class Config{
-
-//        @Bean
-//        ConsultationController controller(){
-//            return new ConsultationController(responseProvider());
-//        }
-//        @Bean ResponseProvider responseProvider() {
-//            return new MockResponseProvider();
-//        }
-//    }
 }

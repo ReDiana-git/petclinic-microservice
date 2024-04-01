@@ -17,6 +17,6 @@ Contract.make {
     }
 
     response {
-        status CREATED()
+        status 201
     }
 }
