@@ -1,5 +1,5 @@
 {
-  "id" : "f7baf5e3-9099-4412-8857-60318cdc305a",
+  "id" : "872cebe5-015b-4b90-9e00-d1f5ed061ddd",
   "request" : {
     "url" : "/appointment/createConsultation",
     "method" : "POST"
@@ -8,5 +8,5 @@
     "status" : 201,
     "transformers" : [ "response-template", "spring-cloud-contract" ]
   },
-  "uuid" : "f7baf5e3-9099-4412-8857-60318cdc305a"
+  "uuid" : "872cebe5-015b-4b90-9e00-d1f5ed061ddd"
 }
