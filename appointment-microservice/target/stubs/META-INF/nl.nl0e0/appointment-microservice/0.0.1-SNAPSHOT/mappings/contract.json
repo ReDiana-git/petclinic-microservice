@@ -1,5 +1,5 @@
 {
-  "id" : "5a7d1376-3e2b-43e9-8fd4-30b6e96d6633",
+  "id" : "00cf2bfe-4245-47ba-9c4c-84bb91448b74",
   "request" : {
     "url" : "/appointment/createAppointments",
     "method" : "POST",
@@ -13,5 +13,5 @@
     "status" : 200,
     "transformers" : [ "response-template", "spring-cloud-contract" ]
   },
-  "uuid" : "5a7d1376-3e2b-43e9-8fd4-30b6e96d6633"
+  "uuid" : "00cf2bfe-4245-47ba-9c4c-84bb91448b74"
 }

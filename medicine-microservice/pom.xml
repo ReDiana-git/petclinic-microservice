@@ -127,7 +127,7 @@
                     <baseClassMappings>
                         <baseClassMapping>
                             <contractPackageRegex>.*</contractPackageRegex>
-                            <baseClassFQN>nl.nl0e0.appointmentmicroservice.contract.BaseTest</baseClassFQN>
+                            <baseClassFQN>nl.nl0e0.medicinemicroservice.contract.ProviderContract</baseClassFQN>
                         </baseClassMapping>
                     </baseClassMappings>
                 </configuration>

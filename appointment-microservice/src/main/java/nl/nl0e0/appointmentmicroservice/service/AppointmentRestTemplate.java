@@ -25,7 +25,10 @@ public class AppointmentRestTemplate {
         ResponseEntity<PaymentEntity> paymentResult = restTemplate.postForEntity(paymentUrl + "createPayment", medicalRecord.getPaymentId(), PaymentEntity.class);
         ResponseEntity<MedicineEntity> medicineResult = restTemplate.postForEntity(medicineUrl + "createMedicine", medicalRecord.getMedicineId(), MedicineEntity.class);
     }
+    public void createConsultation(String consultationId){
+        ResponseEntity<ConsultationEntity> consultationResult = restTemplate.postForEntity(consultationUrl + "createConsultation", consultationId, ConsultationEntity.class);
 
+    }
     public void deleteAllRecord(){
         ResponseEntity<ConsultationEntity> consultationResult = restTemplate.postForEntity(consultationUrl + "deleteConsultation", null, ConsultationEntity.class);
         ResponseEntity<PaymentEntity> paymentResult = restTemplate.postForEntity(paymentUrl + "deletePayment", null, PaymentEntity.class);
