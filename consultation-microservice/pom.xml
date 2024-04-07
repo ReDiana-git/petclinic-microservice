@@ -117,6 +117,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.2.0</version>
             </plugin>
             <plugin>
                 <groupId>org.springframework.cloud</groupId>
@@ -132,8 +133,6 @@
                     </baseClassMappings>
                 </configuration>
             </plugin>
-
-
             <!-- Other plugins like maven-compiler-plugin can be configured here -->
         </plugins>
 

@@ -1,6 +1,5 @@
-nl/nl0e0/consultationmicroservice/ConsultationMicroserviceApplicationTests.class
-org/springframework/cloud/contract/verifier/tests/ContractVerifierTest.class
 nl/nl0e0/consultationmicroservice/service/ConsultationRestTemplateTest.class
 nl/nl0e0/consultationmicroservice/service/ConsultationServiceTest.class
-nl/nl0e0/consultationmicroservice/contract/ConsumerContractTest.class
+nl/nl0e0/consultationmicroservice/ConsultationMicroserviceApplicationTests.class
+org/springframework/cloud/contract/verifier/tests/ContractVerifierTest.class
 nl/nl0e0/consultationmicroservice/contract/BaseTest.class

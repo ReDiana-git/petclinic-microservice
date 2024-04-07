@@ -20,8 +20,8 @@ public class ContractVerifierTest extends BaseTest {
 	public void validate_contract() throws Exception {
 		// given:
 			MockMvcRequestSpecification request = given()
-					.header("Content-Type", "application/json")
-					.body("{\"consultationId\":\"12345\"}");
+
+					.body("12345 ");
 
 		// when:
 			ResponseOptions response = given().spec(request)

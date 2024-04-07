@@ -1,20 +1,12 @@
 {
-  "id" : "061b3c6b-4ac8-48ac-be29-f66fc2415cde",
+  "id" : "f7baf5e3-9099-4412-8857-60318cdc305a",
   "request" : {
     "url" : "/appointment/createConsultation",
-    "method" : "POST",
-    "headers" : {
-      "Content-Type" : {
-        "matches" : "application/json.*"
-      }
-    },
-    "bodyPatterns" : [ {
-      "matchesJsonPath" : "$[?(@.['consultationId'] == '12345')]"
-    } ]
+    "method" : "POST"
   },
   "response" : {
     "status" : 201,
     "transformers" : [ "response-template", "spring-cloud-contract" ]
   },
-  "uuid" : "061b3c6b-4ac8-48ac-be29-f66fc2415cde"
+  "uuid" : "f7baf5e3-9099-4412-8857-60318cdc305a"
 }

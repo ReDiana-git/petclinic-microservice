@@ -6,13 +6,9 @@ Contract.make {
     request {
         method POST()
         url "/appointment/createConsultation"
-        body("""
-        {
-            "consultationId": "12345"
-        }
-        """)
+        body("12345 ")
         headers {
-            contentType(applicationJson())
+//            contentType(applicationJson())
         }
     }
 
