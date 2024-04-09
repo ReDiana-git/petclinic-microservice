@@ -1,0 +1,12 @@
+{
+  "id" : "9603a8da-afd4-460a-a233-925d24c0d670",
+  "request" : {
+    "url" : "/appointment/deleteMedicine",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "9603a8da-afd4-460a-a233-925d24c0d670"
+}

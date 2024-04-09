@@ -1,0 +1,26 @@
+{
+  "id" : "2fa0165b-72c2-48cd-bcf0-8f460eee1158",
+  "request" : {
+    "url" : "/appointment/createAppointments",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['ownerId'] == '1')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['petId'] == '2')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['vetId'] == '1')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['appointmentDate'] == '2024-03-05T21:00:00')]"
+    } ]
+  },
+  "response" : {
+    "status" : 201,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "2fa0165b-72c2-48cd-bcf0-8f460eee1158"
+}

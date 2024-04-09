@@ -1,0 +1,22 @@
+{
+  "id" : "4462adab-633e-4ccf-99b3-575ba31cfa04",
+  "request" : {
+    "url" : "/appointment/getAppointments",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['firstName'] == 'George')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['lastName'] == 'Franklin')]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "4462adab-633e-4ccf-99b3-575ba31cfa04"
+}

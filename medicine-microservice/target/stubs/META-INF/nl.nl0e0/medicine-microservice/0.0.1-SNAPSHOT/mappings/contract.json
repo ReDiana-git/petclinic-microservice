@@ -1,0 +1,12 @@
+{
+  "id" : "31b9e757-4d05-4dfe-981d-fb6e94444ed4",
+  "request" : {
+    "url" : "/appointment/createMedicine",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 201,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "31b9e757-4d05-4dfe-981d-fb6e94444ed4"
+}

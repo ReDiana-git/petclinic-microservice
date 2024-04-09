@@ -12,6 +12,9 @@ public class SetMedicineDTO {
         this.recordId = recordId;
         this.medicines = medicines;
     }
+    public SetMedicineDTO(){
+
+    }
 
     @Override
     public String toString() {

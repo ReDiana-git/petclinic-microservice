@@ -1,6 +1,7 @@
 /Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/AppointmentMicroserviceApplicationTests.java
 /Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/controller/AppointmentControllerTest.java
 /Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/repository/AppointmentRepositoryTest.java
+/Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/contract/ConsumerTest.java
 /Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/service/AppointmentRecordBuilderTest.java
 /Users/rediana/Project/petclinic-microservice/appointment-microservice/target/generated-test-sources/contracts/org/springframework/cloud/contract/verifier/tests/ContractVerifierTest.java
 /Users/rediana/Project/petclinic-microservice/appointment-microservice/src/test/java/nl/nl0e0/appointmentmicroservice/service/AppointmentServiceTest.java

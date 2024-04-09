@@ -79,7 +79,7 @@ public class AppointmentController {
 	}
 
 	@GetMapping("/appointment/medicalRecord/{id}")
-	public ResponseEntity<?> getRecordById(@PathVariable String id){
+	public ResponseEntity<?> getRecordById(@PathVariable("id") String id){
 		MedicalRecord medicalRecord = appointmentService.getMedicalRecordById(id);
 		return ResponseEntity.status(HttpStatus.OK).body(medicalRecord);
 	}

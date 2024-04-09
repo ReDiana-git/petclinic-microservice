@@ -1,0 +1,24 @@
+{
+  "id" : "f9227ebb-36c1-4db1-9cea-43e74865b579",
+  "request" : {
+    "url" : "/appointment/updateConsultation",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['recordId'] == '317498db-9841-408a-b01d-6f7d4d8da4fc')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['medicines'] == 'Aspirin')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['symptom'] == 'cough')]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "f9227ebb-36c1-4db1-9cea-43e74865b579"
+}

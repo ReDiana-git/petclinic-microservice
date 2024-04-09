@@ -1,0 +1,4 @@
+nl/nl0e0/medicinemicroservice/MedicineMicroserviceApplicationTests.class
+org/springframework/cloud/contract/verifier/tests/ContractVerifierTest.class
+nl/nl0e0/medicinemicroservice/service/MedicineServiceTest.class
+nl/nl0e0/medicinemicroservice/contract/BaseTest.class

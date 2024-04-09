@@ -1,0 +1,12 @@
+{
+  "id" : "18875aec-06f4-4b37-8bfb-7761a0b02fe1",
+  "request" : {
+    "url" : "/appointment/deleteConsultation",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "18875aec-06f4-4b37-8bfb-7761a0b02fe1"
+}

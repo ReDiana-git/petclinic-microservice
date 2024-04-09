@@ -1,5 +1,6 @@
 package nl.nl0e0.appointmentmicroservice.contract;
 
+import nl.nl0e0.appointmentmicroservice.entity.MedicalRecord;
 import nl.nl0e0.appointmentmicroservice.service.AppointmentRestTemplate;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,7 +21,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @AutoConfigureStubRunner(
-        ids = "nl.nl0e0:consultation-microservice:+:stubs:8081",
+        ids = {
+                "nl.nl0e0:consultation-microservice:+:stubs:8081",
+                "nl.nl0e0:payment-microservice:+:stubs:8082",
+                "nl.nl0e0:medicine-microservice:+:stubs:8083"
+        },
         stubsMode = StubRunnerProperties.StubsMode.LOCAL
 )
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
@@ -39,5 +44,11 @@ public class ConsumerTest {
         // 消费者端的服务将使用存根来模拟生产者端的响应
         appointmentRestTemplate.createConsultation("1234");
 
+    }
+
+    @Test
+    public void testCreateAppointment() throws Exception {
+        MedicalRecord medicalRecord = new MedicalRecord();
+        appointmentRestTemplate.createNewRecord(medicalRecord);
     }
 }

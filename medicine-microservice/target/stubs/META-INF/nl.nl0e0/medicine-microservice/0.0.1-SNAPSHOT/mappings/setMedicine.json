@@ -1,0 +1,22 @@
+{
+  "id" : "8f4e4d95-57fc-4a94-a2d3-5a76ca29457d",
+  "request" : {
+    "url" : "/appointment/medicine",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['recordId'] == '317498db-9841-408a-b01d-6f7d4d8da4fc')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['medicines'] == 'Aspirin')]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "8f4e4d95-57fc-4a94-a2d3-5a76ca29457d"
+}

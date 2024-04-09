@@ -17,6 +17,20 @@ import static io.restassured.module.mockmvc.RestAssuredMockMvc.*;
 public class ContractVerifierTest extends BaseTest {
 
 	@Test
+	public void validate_deleteConsultation() throws Exception {
+		// given:
+			MockMvcRequestSpecification request = given();
+
+
+		// when:
+			ResponseOptions response = given().spec(request)
+					.post("/appointment/deleteConsultation");
+
+		// then:
+			assertThat(response.statusCode()).isEqualTo(200);
+	}
+
+	@Test
 	public void validate_contract() throws Exception {
 		// given:
 			MockMvcRequestSpecification request = given()
@@ -29,6 +43,21 @@ public class ContractVerifierTest extends BaseTest {
 
 		// then:
 			assertThat(response.statusCode()).isEqualTo(201);
+	}
+
+	@Test
+	public void validate_updateConsultation() throws Exception {
+		// given:
+			MockMvcRequestSpecification request = given()
+					.header("Content-Type", "application/json")
+					.body("{\"recordId\":\"317498db-9841-408a-b01d-6f7d4d8da4fc\",\"medicines\":\"Aspirin\",\"symptom\":\"cough\"}");
+
+		// when:
+			ResponseOptions response = given().spec(request)
+					.post("/appointment/updateConsultation");
+
+		// then:
+			assertThat(response.statusCode()).isEqualTo(200);
 	}
 
 }

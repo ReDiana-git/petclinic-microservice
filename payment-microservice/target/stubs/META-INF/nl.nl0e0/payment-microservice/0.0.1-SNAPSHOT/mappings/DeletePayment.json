@@ -1,0 +1,12 @@
+{
+  "id" : "4360b9b7-780f-4f4e-b4b9-ab848e4fe1f3",
+  "request" : {
+    "url" : "/appointment/deletePayment",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "4360b9b7-780f-4f4e-b4b9-ab848e4fe1f3"
+}

@@ -1,0 +1,6 @@
+META-INF/nl.nl0e0/medicine-microservice/0.0.1-SNAPSHOT/contracts/contract.groovy
+META-INF/nl.nl0e0/medicine-microservice/0.0.1-SNAPSHOT/contracts/setMedicine.groovy
+META-INF/nl.nl0e0/medicine-microservice/0.0.1-SNAPSHOT/mappings/setMedicine.json
+META-INF/nl.nl0e0/medicine-microservice/0.0.1-SNAPSHOT/contracts/DeleteMedicine.groovy
+META-INF/nl.nl0e0/medicine-microservice/0.0.1-SNAPSHOT/mappings/DeleteMedicine.json
+META-INF/nl.nl0e0/medicine-microservice/0.0.1-SNAPSHOT/mappings/contract.json

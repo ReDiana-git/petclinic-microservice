@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.springframework.cloud.contract.verifier.tests.ContractVerifierTest" time="2.923" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.springframework.cloud.contract.verifier.tests.ContractVerifierTest" time="9.63" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/rediana/Project/petclinic-microservice/appointment-microservice/target/test-classes:/Users/rediana/Project/petclinic-microservice/appointment-microservice/target/classes:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/Users/rediana/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/rediana/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/rediana/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/rediana/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/rediana/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/Users/rediana/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/Users/rediana/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.0/spring-boot-starter-data-jpa-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.0/spring-boot-starter-aop-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/Users/rediana/.m2/repository/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.0/spring-boot-starter-jdbc-3.2.0.jar:/Users/rediana/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-jdbc/6.1.1/spring-jdbc-6.1.1.jar:/Users/rediana/.m2/repository/org/hibernate/orm/hibernate-core/6.3.1.Final/hibernate-core-6.3.1.Final.jar:/Users/rediana/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/rediana/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/rediana/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/rediana/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/rediana/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/rediana/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/Users/rediana/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/Users/rediana/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/Users/rediana/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/Users/rediana/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/Users/rediana/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/rediana/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/rediana/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/Users/rediana/.m2/repository/org/springframework/data/spring-data-jpa/3.2.0/spring-data-jpa-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/data/spring-data-commons/3.2.0/spring-data-commons-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-orm/6.1.1/spring-orm-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-tx/6.1.1/spring-tx-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/Users/rediana/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/rediana/.m2/repository/org/springframework/spring-aspects/6.1.1/spring-aspects-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0/spring-boot-starter-web-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0/spring-boot-starter-json-3.2.0.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0/spring-boot-starter-tomcat-3.2.0.jar:/Users/rediana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar:/Users/rediana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.16/tomcat-embed-websocket-10.1.16.jar:/Users/rediana/.m2/repository/org/springframework/spring-web/6.1.1/spring-web-6.1.1.jar:/Users/rediana/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/Users/rediana/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-webmvc/6.1.1/spring-webmvc-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.0/spring-boot-starter-validation-3.2.0.jar:/Users/rediana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.16/tomcat-embed-el-10.1.16.jar:/Users/rediana/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/rediana/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/rediana/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/Users/rediana/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/Users/rediana/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-verifier/4.1.1/spring-cloud-contract-verifier-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-spec/4.1.1/spring-cloud-contract-spec-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-spec-java/4.1.1/spring-cloud-contract-spec-java-4.1.1.jar:/Users/rediana/.m2/repository/dk/brics/automaton/1.12-4/automaton-1.12-4.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-spec-groovy/4.1.1/spring-cloud-contract-spec-groovy-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-shade/4.1.1/spring-cloud-contract-shade-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/Users/rediana/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/Users/rediana/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/rediana/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/rediana/.m2/repository/com/github/tomakehurst/wiremock-jre8-standalone/2.35.1/wiremock-jre8-standalone-2.35.1.jar:/Users/rediana/.m2/repository/com/toomuchcoding/jsonassert/jsonassert/0.8.0/jsonassert-0.8.0.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.9.18/maven-resolver-api-1.9.18.jar:/Users/rediana/.m2/repository/com/rackspace/eclipse/webtools/sourceediting/org.eclipse.wst.xml.xpath2.processor/2.1.100/org.eclipse.wst.xml.xpath2.processor-2.1.100.jar:/Users/rediana/.m2/repository/edu/princeton/cup/java-cup/10k/java-cup-10k.jar:/Users/rediana/.m2/repository/com/ibm/icu/icu4j/4.6/icu4j-4.6.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy/4.0.15/groovy-4.0.15.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy-nio/4.0.15/groovy-nio-4.0.15.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy-json/4.0.15/groovy-json-4.0.15.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy-xml/4.0.15/groovy-xml-4.0.15.jar:/Users/rediana/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/rediana/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/rediana/.m2/repository/com/github/jknack/handlebars/4.3.1/handlebars-4.3.1.jar:/Users/rediana/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/rediana/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/rediana/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.3/jackson-dataformat-yaml-2.15.3.jar:/Users/rediana/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/rediana/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/Users/rediana/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/rediana/.m2/repository/net/javacrumbs/json-unit/json-unit-assertj/2.38.0/json-unit-assertj-2.38.0.jar:/Users/rediana/.m2/repository/net/javacrumbs/json-unit/json-unit-core/2.38.0/json-unit-core-2.38.0.jar:/Users/rediana/.m2/repository/net/javacrumbs/json-unit/json-unit-json-path/2.38.0/json-unit-json-path-2.38.0.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/rediana/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/rediana/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/rediana/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/rediana/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/rediana/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/rediana/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/Users/rediana/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/Users/rediana/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/rediana/.m2/repository/io/rest-assured/spring-mock-mvc/5.3.2/spring-mock-mvc-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/rest-assured/5.3.2/rest-assured-5.3.2.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/rediana/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/rediana/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/rediana/.m2/repository/io/rest-assured/json-path/5.3.2/json-path-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/rest-assured-common/5.3.2/rest-assured-common-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/xml-path/5.3.2/xml-path-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/spring-commons/5.3.2/spring-commons-5.3.2.jar:/Users/rediana/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/Users/rediana/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/rediana/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/rediana/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/rediana/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/rediana/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/rediana/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/rediana/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/rediana/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/rediana/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/rediana/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:"/>
-    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="java.class.path" value="/Users/rediana/Project/petclinic-microservice/appointment-microservice/target/test-classes:/Users/rediana/Project/petclinic-microservice/appointment-microservice/target/classes:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/Users/rediana/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/rediana/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/rediana/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/rediana/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/rediana/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/Users/rediana/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/Users/rediana/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.0/spring-boot-starter-data-jpa-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.0/spring-boot-starter-aop-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/Users/rediana/.m2/repository/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.0/spring-boot-starter-jdbc-3.2.0.jar:/Users/rediana/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-jdbc/6.1.1/spring-jdbc-6.1.1.jar:/Users/rediana/.m2/repository/org/hibernate/orm/hibernate-core/6.3.1.Final/hibernate-core-6.3.1.Final.jar:/Users/rediana/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/rediana/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/rediana/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/rediana/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/rediana/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/rediana/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/Users/rediana/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/Users/rediana/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/Users/rediana/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/Users/rediana/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/Users/rediana/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/rediana/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/rediana/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/Users/rediana/.m2/repository/org/springframework/data/spring-data-jpa/3.2.0/spring-data-jpa-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/data/spring-data-commons/3.2.0/spring-data-commons-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-orm/6.1.1/spring-orm-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-tx/6.1.1/spring-tx-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/Users/rediana/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/rediana/.m2/repository/org/springframework/spring-aspects/6.1.1/spring-aspects-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0/spring-boot-starter-web-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0/spring-boot-starter-json-3.2.0.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0/spring-boot-starter-tomcat-3.2.0.jar:/Users/rediana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar:/Users/rediana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.16/tomcat-embed-websocket-10.1.16.jar:/Users/rediana/.m2/repository/org/springframework/spring-web/6.1.1/spring-web-6.1.1.jar:/Users/rediana/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/Users/rediana/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-webmvc/6.1.1/spring-webmvc-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.0/spring-boot-starter-validation-3.2.0.jar:/Users/rediana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.16/tomcat-embed-el-10.1.16.jar:/Users/rediana/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/rediana/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/rediana/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/Users/rediana/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/Users/rediana/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-verifier/4.1.1/spring-cloud-contract-verifier-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-spec/4.1.1/spring-cloud-contract-spec-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-spec-java/4.1.1/spring-cloud-contract-spec-java-4.1.1.jar:/Users/rediana/.m2/repository/dk/brics/automaton/1.12-4/automaton-1.12-4.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-spec-groovy/4.1.1/spring-cloud-contract-spec-groovy-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-shade/4.1.1/spring-cloud-contract-shade-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/Users/rediana/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/Users/rediana/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/rediana/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/rediana/.m2/repository/com/github/tomakehurst/wiremock-jre8-standalone/2.35.1/wiremock-jre8-standalone-2.35.1.jar:/Users/rediana/.m2/repository/com/toomuchcoding/jsonassert/jsonassert/0.8.0/jsonassert-0.8.0.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.9.18/maven-resolver-api-1.9.18.jar:/Users/rediana/.m2/repository/com/rackspace/eclipse/webtools/sourceediting/org.eclipse.wst.xml.xpath2.processor/2.1.100/org.eclipse.wst.xml.xpath2.processor-2.1.100.jar:/Users/rediana/.m2/repository/edu/princeton/cup/java-cup/10k/java-cup-10k.jar:/Users/rediana/.m2/repository/com/ibm/icu/icu4j/4.6/icu4j-4.6.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy/4.0.15/groovy-4.0.15.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy-nio/4.0.15/groovy-nio-4.0.15.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy-json/4.0.15/groovy-json-4.0.15.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy-xml/4.0.15/groovy-xml-4.0.15.jar:/Users/rediana/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/rediana/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/rediana/.m2/repository/com/github/jknack/handlebars/4.3.1/handlebars-4.3.1.jar:/Users/rediana/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/rediana/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/rediana/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.3/jackson-dataformat-yaml-2.15.3.jar:/Users/rediana/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/rediana/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/Users/rediana/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/rediana/.m2/repository/net/javacrumbs/json-unit/json-unit-assertj/2.38.0/json-unit-assertj-2.38.0.jar:/Users/rediana/.m2/repository/net/javacrumbs/json-unit/json-unit-core/2.38.0/json-unit-core-2.38.0.jar:/Users/rediana/.m2/repository/net/javacrumbs/json-unit/json-unit-json-path/2.38.0/json-unit-json-path-2.38.0.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/rediana/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/rediana/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/rediana/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/rediana/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/rediana/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/rediana/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/Users/rediana/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/Users/rediana/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/rediana/.m2/repository/io/rest-assured/spring-mock-mvc/5.3.2/spring-mock-mvc-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/rest-assured/5.3.2/rest-assured-5.3.2.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/rediana/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/rediana/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/rediana/.m2/repository/io/rest-assured/json-path/5.3.2/json-path-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/rest-assured-common/5.3.2/rest-assured-common-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/xml-path/5.3.2/xml-path-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/spring-commons/5.3.2/spring-commons-5.3.2.jar:/Users/rediana/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/Users/rediana/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/rediana/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/rediana/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/rediana/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/rediana/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/rediana/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/rediana/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/rediana/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/rediana/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/rediana/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-starter-contract-stub-runner/4.1.1/spring-cloud-starter-contract-stub-runner-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-stub-runner/4.1.1/spring-cloud-contract-stub-runner-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-converters/4.1.1/spring-cloud-contract-converters-4.1.1.jar:/Users/rediana/.m2/repository/org/eclipse/jgit/org.eclipse.jgit/6.7.0.202309050840-r/org.eclipse.jgit-6.7.0.202309050840-r.jar:/Users/rediana/.m2/repository/com/googlecode/javaewah/JavaEWAH/1.2.3/JavaEWAH-1.2.3.jar:/Users/rediana/.m2/repository/org/eclipse/jgit/org.eclipse.jgit.ssh.jsch/6.7.0.202309050840-r/org.eclipse.jgit.ssh.jsch-6.7.0.202309050840-r.jar:/Users/rediana/.m2/repository/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar:/Users/rediana/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/Users/rediana/.m2/repository/com/jcraft/jsch.agentproxy.sshagent/0.0.9/jsch.agentproxy.sshagent-0.0.9.jar:/Users/rediana/.m2/repository/com/jcraft/jsch.agentproxy.core/0.0.9/jsch.agentproxy.core-0.0.9.jar:/Users/rediana/.m2/repository/com/jcraft/jsch.agentproxy.jsch/0.0.9/jsch.agentproxy.jsch-0.0.9.jar:/Users/rediana/.m2/repository/com/jcraft/jsch.agentproxy.usocket-jna/0.0.9/jsch.agentproxy.usocket-jna-0.0.9.jar:/Users/rediana/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/rediana/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-wiremock/4.1.1/spring-cloud-contract-wiremock-4.1.1.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2.3/httpcore5-5.2.3.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2.3/httpcore5-h2-5.2.3.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-test-support/4.1.0/spring-cloud-test-support-4.1.0.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-connector-basic/1.9.16/maven-resolver-connector-basic-1.9.16.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-spi/1.9.16/maven-resolver-spi-1.9.16.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.9.16/maven-resolver-util-1.9.16.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-impl/1.9.16/maven-resolver-impl-1.9.16.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-named-locks/1.9.16/maven-resolver-named-locks-1.9.16.jar:/Users/rediana/.m2/repository/org/apache/maven/maven-resolver-provider/3.9.5/maven-resolver-provider-3.9.5.jar:/Users/rediana/.m2/repository/org/apache/maven/maven-model/3.9.5/maven-model-3.9.5.jar:/Users/rediana/.m2/repository/org/apache/maven/maven-model-builder/3.9.5/maven-model-builder-3.9.5.jar:/Users/rediana/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar:/Users/rediana/.m2/repository/org/apache/maven/maven-artifact/3.9.5/maven-artifact-3.9.5.jar:/Users/rediana/.m2/repository/org/apache/maven/maven-builder-support/3.9.5/maven-builder-support-3.9.5.jar:/Users/rediana/.m2/repository/org/apache/maven/maven-repository-metadata/3.9.5/maven-repository-metadata-3.9.5.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-transport-http/1.9.16/maven-resolver-transport-http-1.9.16.jar:/Users/rediana/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/2.6.0/sisu-inject-plexus-2.6.0.jar:/Users/rediana/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar:/Users/rediana/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar:/Users/rediana/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.jar:/Users/rediana/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.6.0/sisu-inject-bean-2.6.0.jar:/Users/rediana/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar:/Users/rediana/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/Users/rediana/.m2/repository/org/sonatype/sisu/sisu-guice/3.2.5/sisu-guice-3.2.5-no_aop.jar:/Users/rediana/.m2/repository/com/google/guava/guava/16.0.1/guava-16.0.1.jar:/Users/rediana/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.0/org.eclipse.sisu.inject-0.3.0.jar:/Users/rediana/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.0/org.eclipse.sisu.plexus-0.3.0.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
     <property name="user.timezone" value="Asia/Taipei"/>
     <property name="org.jboss.logging.provider" value="slf4j"/>
     <property name="os.name" value="Mac OS X"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TW"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/rediana/Project/petclinic-microservice/appointment-microservice/target/surefire/surefirebooter-20240326135710247_3.jar /Users/rediana/Project/petclinic-microservice/appointment-microservice/target/surefire 2024-03-26T13-57-10_203-jvmRun1 surefire-20240326135710247_1tmp surefire_0-20240326135710247_2tmp"/>
+    <property name="sun.boot.library.path" value="/Users/rediana/Library/Java/JavaVirtualMachines/corretto-17.0.10/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/rediana/Project/petclinic-microservice/appointment-microservice/target/surefire/surefirebooter-20240409111237335_3.jar /Users/rediana/Project/petclinic-microservice/appointment-microservice/target/surefire 2024-04-09T11-12-37_286-jvmRun1 surefire-20240409111237335_1tmp surefire_0-20240409111237335_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/rediana/Project/petclinic-microservice/appointment-microservice/target/test-classes:/Users/rediana/Project/petclinic-microservice/appointment-microservice/target/classes:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/Users/rediana/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/rediana/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/rediana/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/rediana/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/rediana/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/Users/rediana/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/Users/rediana/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.0/spring-boot-starter-data-jpa-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.0/spring-boot-starter-aop-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/Users/rediana/.m2/repository/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.0/spring-boot-starter-jdbc-3.2.0.jar:/Users/rediana/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-jdbc/6.1.1/spring-jdbc-6.1.1.jar:/Users/rediana/.m2/repository/org/hibernate/orm/hibernate-core/6.3.1.Final/hibernate-core-6.3.1.Final.jar:/Users/rediana/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/rediana/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/rediana/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/rediana/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/rediana/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/rediana/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/Users/rediana/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/Users/rediana/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/Users/rediana/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/Users/rediana/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/Users/rediana/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/rediana/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/rediana/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/Users/rediana/.m2/repository/org/springframework/data/spring-data-jpa/3.2.0/spring-data-jpa-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/data/spring-data-commons/3.2.0/spring-data-commons-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-orm/6.1.1/spring-orm-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-tx/6.1.1/spring-tx-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/Users/rediana/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/rediana/.m2/repository/org/springframework/spring-aspects/6.1.1/spring-aspects-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0/spring-boot-starter-web-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0/spring-boot-starter-json-3.2.0.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0/spring-boot-starter-tomcat-3.2.0.jar:/Users/rediana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar:/Users/rediana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.16/tomcat-embed-websocket-10.1.16.jar:/Users/rediana/.m2/repository/org/springframework/spring-web/6.1.1/spring-web-6.1.1.jar:/Users/rediana/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/Users/rediana/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-webmvc/6.1.1/spring-webmvc-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.0/spring-boot-starter-validation-3.2.0.jar:/Users/rediana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.16/tomcat-embed-el-10.1.16.jar:/Users/rediana/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/rediana/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/rediana/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/Users/rediana/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/Users/rediana/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-verifier/4.1.1/spring-cloud-contract-verifier-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-spec/4.1.1/spring-cloud-contract-spec-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-spec-java/4.1.1/spring-cloud-contract-spec-java-4.1.1.jar:/Users/rediana/.m2/repository/dk/brics/automaton/1.12-4/automaton-1.12-4.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-spec-groovy/4.1.1/spring-cloud-contract-spec-groovy-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-shade/4.1.1/spring-cloud-contract-shade-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/Users/rediana/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/Users/rediana/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/rediana/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/rediana/.m2/repository/com/github/tomakehurst/wiremock-jre8-standalone/2.35.1/wiremock-jre8-standalone-2.35.1.jar:/Users/rediana/.m2/repository/com/toomuchcoding/jsonassert/jsonassert/0.8.0/jsonassert-0.8.0.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.9.18/maven-resolver-api-1.9.18.jar:/Users/rediana/.m2/repository/com/rackspace/eclipse/webtools/sourceediting/org.eclipse.wst.xml.xpath2.processor/2.1.100/org.eclipse.wst.xml.xpath2.processor-2.1.100.jar:/Users/rediana/.m2/repository/edu/princeton/cup/java-cup/10k/java-cup-10k.jar:/Users/rediana/.m2/repository/com/ibm/icu/icu4j/4.6/icu4j-4.6.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy/4.0.15/groovy-4.0.15.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy-nio/4.0.15/groovy-nio-4.0.15.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy-json/4.0.15/groovy-json-4.0.15.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy-xml/4.0.15/groovy-xml-4.0.15.jar:/Users/rediana/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/rediana/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/rediana/.m2/repository/com/github/jknack/handlebars/4.3.1/handlebars-4.3.1.jar:/Users/rediana/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/rediana/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/rediana/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.3/jackson-dataformat-yaml-2.15.3.jar:/Users/rediana/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/rediana/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/Users/rediana/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/rediana/.m2/repository/net/javacrumbs/json-unit/json-unit-assertj/2.38.0/json-unit-assertj-2.38.0.jar:/Users/rediana/.m2/repository/net/javacrumbs/json-unit/json-unit-core/2.38.0/json-unit-core-2.38.0.jar:/Users/rediana/.m2/repository/net/javacrumbs/json-unit/json-unit-json-path/2.38.0/json-unit-json-path-2.38.0.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/rediana/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/rediana/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/rediana/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/rediana/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/rediana/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/rediana/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/Users/rediana/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/Users/rediana/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/rediana/.m2/repository/io/rest-assured/spring-mock-mvc/5.3.2/spring-mock-mvc-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/rest-assured/5.3.2/rest-assured-5.3.2.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/rediana/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/rediana/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/rediana/.m2/repository/io/rest-assured/json-path/5.3.2/json-path-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/rest-assured-common/5.3.2/rest-assured-common-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/xml-path/5.3.2/xml-path-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/spring-commons/5.3.2/spring-commons-5.3.2.jar:/Users/rediana/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/Users/rediana/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/rediana/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/rediana/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/rediana/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/rediana/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/rediana/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/rediana/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/rediana/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/rediana/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/rediana/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/rediana/Project/petclinic-microservice/appointment-microservice/target/test-classes:/Users/rediana/Project/petclinic-microservice/appointment-microservice/target/classes:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/Users/rediana/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/Users/rediana/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/Users/rediana/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/rediana/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/rediana/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/Users/rediana/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/Users/rediana/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.0/spring-boot-starter-data-jpa-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.0/spring-boot-starter-aop-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/Users/rediana/.m2/repository/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.0/spring-boot-starter-jdbc-3.2.0.jar:/Users/rediana/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-jdbc/6.1.1/spring-jdbc-6.1.1.jar:/Users/rediana/.m2/repository/org/hibernate/orm/hibernate-core/6.3.1.Final/hibernate-core-6.3.1.Final.jar:/Users/rediana/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/rediana/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/rediana/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/rediana/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/rediana/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/rediana/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/Users/rediana/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/Users/rediana/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/Users/rediana/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/Users/rediana/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/Users/rediana/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/rediana/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/rediana/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/Users/rediana/.m2/repository/org/springframework/data/spring-data-jpa/3.2.0/spring-data-jpa-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/data/spring-data-commons/3.2.0/spring-data-commons-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-orm/6.1.1/spring-orm-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-tx/6.1.1/spring-tx-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/Users/rediana/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/rediana/.m2/repository/org/springframework/spring-aspects/6.1.1/spring-aspects-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0/spring-boot-starter-web-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0/spring-boot-starter-json-3.2.0.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0/spring-boot-starter-tomcat-3.2.0.jar:/Users/rediana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar:/Users/rediana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.16/tomcat-embed-websocket-10.1.16.jar:/Users/rediana/.m2/repository/org/springframework/spring-web/6.1.1/spring-web-6.1.1.jar:/Users/rediana/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/Users/rediana/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/Users/rediana/.m2/repository/org/springframework/spring-webmvc/6.1.1/spring-webmvc-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.0/spring-boot-starter-validation-3.2.0.jar:/Users/rediana/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.16/tomcat-embed-el-10.1.16.jar:/Users/rediana/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/Users/rediana/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/Users/rediana/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/Users/rediana/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/Users/rediana/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-verifier/4.1.1/spring-cloud-contract-verifier-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-spec/4.1.1/spring-cloud-contract-spec-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-spec-java/4.1.1/spring-cloud-contract-spec-java-4.1.1.jar:/Users/rediana/.m2/repository/dk/brics/automaton/1.12-4/automaton-1.12-4.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-spec-groovy/4.1.1/spring-cloud-contract-spec-groovy-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-shade/4.1.1/spring-cloud-contract-shade-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/Users/rediana/.m2/repository/org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar:/Users/rediana/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/rediana/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/rediana/.m2/repository/com/github/tomakehurst/wiremock-jre8-standalone/2.35.1/wiremock-jre8-standalone-2.35.1.jar:/Users/rediana/.m2/repository/com/toomuchcoding/jsonassert/jsonassert/0.8.0/jsonassert-0.8.0.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.9.18/maven-resolver-api-1.9.18.jar:/Users/rediana/.m2/repository/com/rackspace/eclipse/webtools/sourceediting/org.eclipse.wst.xml.xpath2.processor/2.1.100/org.eclipse.wst.xml.xpath2.processor-2.1.100.jar:/Users/rediana/.m2/repository/edu/princeton/cup/java-cup/10k/java-cup-10k.jar:/Users/rediana/.m2/repository/com/ibm/icu/icu4j/4.6/icu4j-4.6.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy/4.0.15/groovy-4.0.15.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy-nio/4.0.15/groovy-nio-4.0.15.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy-json/4.0.15/groovy-json-4.0.15.jar:/Users/rediana/.m2/repository/org/apache/groovy/groovy-xml/4.0.15/groovy-xml-4.0.15.jar:/Users/rediana/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/rediana/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/rediana/.m2/repository/com/github/jknack/handlebars/4.3.1/handlebars-4.3.1.jar:/Users/rediana/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/rediana/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/rediana/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/rediana/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.3/jackson-dataformat-yaml-2.15.3.jar:/Users/rediana/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/rediana/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/Users/rediana/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/rediana/.m2/repository/net/javacrumbs/json-unit/json-unit-assertj/2.38.0/json-unit-assertj-2.38.0.jar:/Users/rediana/.m2/repository/net/javacrumbs/json-unit/json-unit-core/2.38.0/json-unit-core-2.38.0.jar:/Users/rediana/.m2/repository/net/javacrumbs/json-unit/json-unit-json-path/2.38.0/json-unit-json-path-2.38.0.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/rediana/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/rediana/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/rediana/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/Users/rediana/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/Users/rediana/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/rediana/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/Users/rediana/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/Users/rediana/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/rediana/.m2/repository/io/rest-assured/spring-mock-mvc/5.3.2/spring-mock-mvc-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/rest-assured/5.3.2/rest-assured-5.3.2.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/Users/rediana/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/rediana/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/rediana/.m2/repository/io/rest-assured/json-path/5.3.2/json-path-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/rest-assured-common/5.3.2/rest-assured-common-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/xml-path/5.3.2/xml-path-5.3.2.jar:/Users/rediana/.m2/repository/io/rest-assured/spring-commons/5.3.2/spring-commons-5.3.2.jar:/Users/rediana/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/Users/rediana/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/Users/rediana/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/rediana/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/rediana/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/rediana/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/rediana/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/rediana/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/rediana/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/rediana/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/rediana/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/rediana/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/rediana/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-starter-contract-stub-runner/4.1.1/spring-cloud-starter-contract-stub-runner-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-stub-runner/4.1.1/spring-cloud-contract-stub-runner-4.1.1.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-converters/4.1.1/spring-cloud-contract-converters-4.1.1.jar:/Users/rediana/.m2/repository/org/eclipse/jgit/org.eclipse.jgit/6.7.0.202309050840-r/org.eclipse.jgit-6.7.0.202309050840-r.jar:/Users/rediana/.m2/repository/com/googlecode/javaewah/JavaEWAH/1.2.3/JavaEWAH-1.2.3.jar:/Users/rediana/.m2/repository/org/eclipse/jgit/org.eclipse.jgit.ssh.jsch/6.7.0.202309050840-r/org.eclipse.jgit.ssh.jsch-6.7.0.202309050840-r.jar:/Users/rediana/.m2/repository/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar:/Users/rediana/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/Users/rediana/.m2/repository/com/jcraft/jsch.agentproxy.sshagent/0.0.9/jsch.agentproxy.sshagent-0.0.9.jar:/Users/rediana/.m2/repository/com/jcraft/jsch.agentproxy.core/0.0.9/jsch.agentproxy.core-0.0.9.jar:/Users/rediana/.m2/repository/com/jcraft/jsch.agentproxy.jsch/0.0.9/jsch.agentproxy.jsch-0.0.9.jar:/Users/rediana/.m2/repository/com/jcraft/jsch.agentproxy.usocket-jna/0.0.9/jsch.agentproxy.usocket-jna-0.0.9.jar:/Users/rediana/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/rediana/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-contract-wiremock/4.1.1/spring-cloud-contract-wiremock-4.1.1.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2.3/httpcore5-5.2.3.jar:/Users/rediana/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2.3/httpcore5-h2-5.2.3.jar:/Users/rediana/.m2/repository/org/springframework/cloud/spring-cloud-test-support/4.1.0/spring-cloud-test-support-4.1.0.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-connector-basic/1.9.16/maven-resolver-connector-basic-1.9.16.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-spi/1.9.16/maven-resolver-spi-1.9.16.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.9.16/maven-resolver-util-1.9.16.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-impl/1.9.16/maven-resolver-impl-1.9.16.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-named-locks/1.9.16/maven-resolver-named-locks-1.9.16.jar:/Users/rediana/.m2/repository/org/apache/maven/maven-resolver-provider/3.9.5/maven-resolver-provider-3.9.5.jar:/Users/rediana/.m2/repository/org/apache/maven/maven-model/3.9.5/maven-model-3.9.5.jar:/Users/rediana/.m2/repository/org/apache/maven/maven-model-builder/3.9.5/maven-model-builder-3.9.5.jar:/Users/rediana/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar:/Users/rediana/.m2/repository/org/apache/maven/maven-artifact/3.9.5/maven-artifact-3.9.5.jar:/Users/rediana/.m2/repository/org/apache/maven/maven-builder-support/3.9.5/maven-builder-support-3.9.5.jar:/Users/rediana/.m2/repository/org/apache/maven/maven-repository-metadata/3.9.5/maven-repository-metadata-3.9.5.jar:/Users/rediana/.m2/repository/org/apache/maven/resolver/maven-resolver-transport-http/1.9.16/maven-resolver-transport-http-1.9.16.jar:/Users/rediana/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/2.6.0/sisu-inject-plexus-2.6.0.jar:/Users/rediana/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar:/Users/rediana/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar:/Users/rediana/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.18/plexus-utils-3.0.18.jar:/Users/rediana/.m2/repository/org/sonatype/sisu/sisu-inject-bean/2.6.0/sisu-inject-bean-2.6.0.jar:/Users/rediana/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar:/Users/rediana/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/Users/rediana/.m2/repository/org/sonatype/sisu/sisu-guice/3.2.5/sisu-guice-3.2.5-no_aop.jar:/Users/rediana/.m2/repository/com/google/guava/guava/16.0.1/guava-16.0.1.jar:/Users/rediana/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.0/org.eclipse.sisu.inject-0.3.0.jar:/Users/rediana/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.0/org.eclipse.sisu.plexus-0.3.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/rediana"/>
     <property name="user.language" value="zh"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2022-08-12"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/Users/rediana/Library/Java/JavaVirtualMachines/corretto-17.0.10/Contents/Home"/>
     <property name="file.separator" value="/"/>
     <property name="basedir" value="/Users/rediana/Project/petclinic-microservice/appointment-microservice"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
@@ -32,52 +32,43 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="/Users/rediana/Project/petclinic-microservice/appointment-microservice/target/surefire/surefirebooter-20240326135710247_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/rediana/Project/petclinic-microservice/appointment-microservice/target/surefire/surefirebooter-20240409111237335_3.jar"/>
     <property name="user.script" value="Hant"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="17.0.4.1+1-LTS"/>
+    <property name="java.runtime.version" value="17.0.10+7-LTS"/>
     <property name="user.name" value="rediana"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="14.4"/>
+    <property name="os.version" value="14.4.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Zulu17.36+17-CA"/>
+    <property name="java.vendor.version" value="Corretto-17.0.10.7.1"/>
     <property name="localRepository" value="/Users/rediana/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
-    <property name="java.io.tmpdir" value="/var/folders/zm/q22cqt6d7yx9yl58p5sg53w80000gn/T/"/>
-    <property name="idea.version" value="2023.3.2"/>
+    <property name="javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom" value="com.sun.org.apache.xpath.internal.jaxp.XPathFactoryImpl"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="jetty.git.hash" value="4231a3b2e4cb8548a412a789936d640a97b1aa0a"/>
+    <property name="java.io.tmpdir" value="/var/folders/bd/lgl244492mn6hgm7k6jjgyd40000gn/T/"/>
+    <property name="wiremock.org.eclipse.jetty.http.HttpGenerator.STRICT" value="true"/>
+    <property name="idea.version" value="2023.2.6"/>
     <property name="com.zaxxer.hikari.pool_number" value="1"/>
-    <property name="java.version" value="17.0.4.1"/>
+    <property name="java.version" value="17.0.10"/>
     <property name="user.dir" value="/Users/rediana/Project/petclinic-microservice/appointment-microservice"/>
-    <property name="os.arch" value="aarch64"/>
+    <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="7907"/>
+    <property name="PID" value="21842"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/rediana/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.vendor" value="Azul Systems, Inc."/>
-    <property name="java.vm.version" value="17.0.4.1+1-LTS"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.10+7-LTS"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="javax.xml.transform.TransformerFactory" value="com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="validate_contract" classname="org.springframework.cloud.contract.verifier.tests.ContractVerifierTest" time="0.486">
-    <failure message="&#10;expected: 200&#10; but was: 400" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-
-expected: 200
- but was: 400
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at org.springframework.cloud.contract.verifier.tests.ContractVerifierTest.validate_contract(ContractVerifierTest.java:27)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
+  <testcase name="validate_getRecordById" classname="org.springframework.cloud.contract.verifier.tests.ContractVerifierTest" time="0.625">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -87,29 +78,432 @@ expected: 200
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2024-03-26T13:57:10.841+08:00  INFO 7907 --- [           main] o.s.c.c.v.tests.ContractVerifierTest     : Starting ContractVerifierTest using Java 17.0.4.1 with PID 7907 (started by rediana in /Users/rediana/Project/petclinic-microservice/appointment-microservice)
-2024-03-26T13:57:10.843+08:00  INFO 7907 --- [           main] o.s.c.c.v.tests.ContractVerifierTest     : No active profile set, falling back to 1 default profile: "default"
-2024-03-26T13:57:11.234+08:00  INFO 7907 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-03-26T13:57:11.264+08:00  INFO 7907 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 5 JPA repository interfaces.
-2024-03-26T13:57:11.462+08:00  INFO 7907 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-03-26T13:57:11.604+08:00  INFO 7907 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58a765ce
-2024-03-26T13:57:11.605+08:00  INFO 7907 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-03-26T13:57:11.628+08:00  INFO 7907 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-03-26T13:57:11.655+08:00  INFO 7907 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
-2024-03-26T13:57:11.671+08:00  INFO 7907 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-03-26T13:57:11.785+08:00  INFO 7907 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-03-26T13:57:12.370+08:00  INFO 7907 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-03-26T13:57:12.372+08:00  INFO 7907 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-03-26T13:57:12.494+08:00  INFO 7907 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-03-26T13:57:12.809+08:00  WARN 7907 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-03-26T13:57:12.974+08:00  INFO 7907 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-03-26T13:57:12.975+08:00  INFO 7907 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-03-26T13:57:12.976+08:00  INFO 7907 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2024-03-26T13:57:12.985+08:00  INFO 7907 --- [           main] o.s.c.c.v.tests.ContractVerifierTest     : Started ContractVerifierTest in 2.26 seconds (process running for 2.691)
-2024-03-26T13:57:13.343+08:00  INFO 7907 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-03-26T13:57:13.343+08:00  INFO 7907 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-03-26T13:57:13.344+08:00  INFO 7907 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2024-03-26T13:57:13.409+08:00  WARN 7907 --- [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<?> nl.nl0e0.appointmentmicroservice.controller.AppointmentController.createAppointment(nl.nl0e0.appointmentmicroservice.entity.CreateAppointmentDTO)]
+2024-04-09T11:12:38.123+08:00  INFO 21842 --- [           main] o.s.c.c.v.tests.ContractVerifierTest     : Starting ContractVerifierTest using Java 17.0.10 with PID 21842 (started by rediana in /Users/rediana/Project/petclinic-microservice/appointment-microservice)
+2024-04-09T11:12:38.125+08:00  INFO 21842 --- [           main] o.s.c.c.v.tests.ContractVerifierTest     : No active profile set, falling back to 1 default profile: "default"
+2024-04-09T11:12:38.606+08:00  INFO 21842 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-09T11:12:38.644+08:00  INFO 21842 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 5 JPA repository interfaces.
+2024-04-09T11:12:38.810+08:00  WARN 21842 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.contract.stubrunner.spring.StubRunnerConfiguration' of type [org.springframework.cloud.contract.stubrunner.spring.StubRunnerConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [batchStubRunnerBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-04-09T11:12:38.820+08:00  WARN 21842 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'stubrunner-org.springframework.cloud.contract.stubrunner.spring.StubRunnerProperties' of type [org.springframework.cloud.contract.stubrunner.spring.StubRunnerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [batchStubRunnerBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-04-09T11:12:38.823+08:00  INFO 21842 --- [           main] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
+2024-04-09T11:12:38.835+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
+2024-04-09T11:12:43.884+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Desired version is [+] - will try to resolve the latest version
+2024-04-09T11:12:43.892+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
+2024-04-09T11:12:43.895+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [nl.nl0e0:consultation-microservice:jar:stubs:0.0.1-SNAPSHOT] to /Users/rediana/.m2/repository/nl/nl0e0/consultation-microservice/0.0.1-SNAPSHOT/consultation-microservice-0.0.1-SNAPSHOT-stubs.jar
+2024-04-09T11:12:43.897+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/Users/rediana/.m2/repository/nl/nl0e0/consultation-microservice/0.0.1-SNAPSHOT/consultation-microservice-0.0.1-SNAPSHOT-stubs.jar]
+2024-04-09T11:12:43.900+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [/var/folders/bd/lgl244492mn6hgm7k6jjgyd40000gn/T/contracts-1712632363896-0]
+2024-04-09T11:12:44.441+08:00  INFO 21842 --- [           main] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
+2024-04-09T11:12:44.441+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
+2024-04-09T11:12:44.442+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Desired version is [+] - will try to resolve the latest version
+2024-04-09T11:12:44.443+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
+2024-04-09T11:12:44.444+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [nl.nl0e0:payment-microservice:jar:stubs:0.0.1-SNAPSHOT] to /Users/rediana/.m2/repository/nl/nl0e0/payment-microservice/0.0.1-SNAPSHOT/payment-microservice-0.0.1-SNAPSHOT-stubs.jar
+2024-04-09T11:12:44.444+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/Users/rediana/.m2/repository/nl/nl0e0/payment-microservice/0.0.1-SNAPSHOT/payment-microservice-0.0.1-SNAPSHOT-stubs.jar]
+2024-04-09T11:12:44.446+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [/var/folders/bd/lgl244492mn6hgm7k6jjgyd40000gn/T/contracts-1712632364444-0]
+2024-04-09T11:12:44.477+08:00  INFO 21842 --- [           main] o.s.c.c.s.AetherStubDownloaderBuilder    : Will download stubs and contracts via Aether
+2024-04-09T11:12:44.478+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Remote repos not passed but the switch to work offline was set. Stubs will be used from your local Maven repository.
+2024-04-09T11:12:44.478+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Desired version is [+] - will try to resolve the latest version
+2024-04-09T11:12:44.479+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved version is [0.0.1-SNAPSHOT]
+2024-04-09T11:12:44.480+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Resolved artifact [nl.nl0e0:medicine-microservice:jar:stubs:0.0.1-SNAPSHOT] to /Users/rediana/.m2/repository/nl/nl0e0/medicine-microservice/0.0.1-SNAPSHOT/medicine-microservice-0.0.1-SNAPSHOT-stubs.jar
+2024-04-09T11:12:44.481+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacking stub from JAR [URI: file:/Users/rediana/.m2/repository/nl/nl0e0/medicine-microservice/0.0.1-SNAPSHOT/medicine-microservice-0.0.1-SNAPSHOT-stubs.jar]
+2024-04-09T11:12:44.482+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.AetherStubDownloader  : Unpacked file to [/var/folders/bd/lgl244492mn6hgm7k6jjgyd40000gn/T/contracts-1712632364480-0]
+2024-04-09T11:12:44.908+08:00  INFO 21842 --- [qtp348102608-43] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Host: []
+Content-Length: [225]
+Content-Type: [text/plain; charset=UTF-8]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/17.0.10)]
+{
+  "id" : "6aead701-0082-40ff-8fea-8f71ec7c884c",
+  "request" : {
+    "url" : "/ping",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "6aead701-0082-40ff-8fea-8f71ec7c884c"
+}
+
+2024-04-09T11:12:44.920+08:00  INFO 21842 --- [qtp348102608-36] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Host: []
+Content-Length: [227]
+Content-Type: [text/plain; charset=UTF-8]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/17.0.10)]
+{
+  "id" : "63055ed7-3bdd-4aee-9a99-1c00749192b9",
+  "request" : {
+    "url" : "/health",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "63055ed7-3bdd-4aee-9a99-1c00749192b9"
+}
+
+2024-04-09T11:12:44.923+08:00  INFO 21842 --- [qtp348102608-42] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Host: []
+Content-Length: [304]
+Content-Type: [text/plain; charset=UTF-8]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/17.0.10)]
+{
+  "id" : "787bc333-257d-4f4e-8fd9-f1efcda2a15b",
+  "request" : {
+    "url" : "/appointment/deleteConsultation",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "787bc333-257d-4f4e-8fd9-f1efcda2a15b"
+}
+
+2024-04-09T11:12:44.926+08:00  INFO 21842 --- [qtp348102608-37] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Host: []
+Content-Length: [304]
+Content-Type: [text/plain; charset=UTF-8]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/17.0.10)]
+{
+  "id" : "5fd9c6e6-5725-4e3f-b707-527f5913f803",
+  "request" : {
+    "url" : "/appointment/createConsultation",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 201,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "5fd9c6e6-5725-4e3f-b707-527f5913f803"
+}
+
+2024-04-09T11:12:44.928+08:00  INFO 21842 --- [           main] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [nl.nl0e0:consultation-microservice:0.0.1-SNAPSHOT:stubs] on port 8081 with [2] mappings
+2024-04-09T11:12:44.929+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={nl.nl0e0:consultation-microservice:0.0.1-SNAPSHOT:stubs=8081}]
+2024-04-09T11:12:44.936+08:00  INFO 21842 --- [qtp863768292-54] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Host: []
+Content-Length: [225]
+Content-Type: [text/plain; charset=UTF-8]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/17.0.10)]
+{
+  "id" : "52993fda-6332-48da-aa85-ce6c134b4d14",
+  "request" : {
+    "url" : "/ping",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "52993fda-6332-48da-aa85-ce6c134b4d14"
+}
+
+2024-04-09T11:12:44.938+08:00  INFO 21842 --- [qtp863768292-47] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Host: []
+Content-Length: [227]
+Content-Type: [text/plain; charset=UTF-8]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/17.0.10)]
+{
+  "id" : "5d998cc8-0416-410f-8cfe-72cb3b282828",
+  "request" : {
+    "url" : "/health",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "5d998cc8-0416-410f-8cfe-72cb3b282828"
+}
+
+2024-04-09T11:12:44.942+08:00  INFO 21842 --- [qtp863768292-53] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Host: []
+Content-Length: [299]
+Content-Type: [text/plain; charset=UTF-8]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/17.0.10)]
+{
+  "id" : "4360b9b7-780f-4f4e-b4b9-ab848e4fe1f3",
+  "request" : {
+    "url" : "/appointment/deletePayment",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "4360b9b7-780f-4f4e-b4b9-ab848e4fe1f3"
+}
+
+2024-04-09T11:12:44.945+08:00  INFO 21842 --- [qtp863768292-48] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Host: []
+Content-Length: [299]
+Content-Type: [text/plain; charset=UTF-8]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/17.0.10)]
+{
+  "id" : "7b25a36d-14b3-4487-9d72-90ef30a074d7",
+  "request" : {
+    "url" : "/appointment/createPayment",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 201,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "7b25a36d-14b3-4487-9d72-90ef30a074d7"
+}
+
+2024-04-09T11:12:44.949+08:00  INFO 21842 --- [           main] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [nl.nl0e0:payment-microservice:0.0.1-SNAPSHOT:stubs] on port 8082 with [2] mappings
+2024-04-09T11:12:44.949+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={nl.nl0e0:payment-microservice:0.0.1-SNAPSHOT:stubs=8082}]
+2024-04-09T11:12:44.956+08:00  INFO 21842 --- [tp1533375298-64] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Host: []
+Content-Length: [225]
+Content-Type: [text/plain; charset=UTF-8]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/17.0.10)]
+{
+  "id" : "6e577f8c-8746-4517-8375-6c8089975cde",
+  "request" : {
+    "url" : "/ping",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "6e577f8c-8746-4517-8375-6c8089975cde"
+}
+
+2024-04-09T11:12:44.959+08:00  INFO 21842 --- [tp1533375298-57] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Host: []
+Content-Length: [227]
+Content-Type: [text/plain; charset=UTF-8]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/17.0.10)]
+{
+  "id" : "124fe350-21a3-4d75-901b-98116aa562e4",
+  "request" : {
+    "url" : "/health",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "OK"
+  },
+  "uuid" : "124fe350-21a3-4d75-901b-98116aa562e4"
+}
+
+2024-04-09T11:12:44.965+08:00  INFO 21842 --- [tp1533375298-63] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Host: []
+Content-Length: [590]
+Content-Type: [text/plain; charset=UTF-8]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/17.0.10)]
+{
+  "id" : "8f4e4d95-57fc-4a94-a2d3-5a76ca29457d",
+  "request" : {
+    "url" : "/appointment/medicine",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['recordId'] == '317498db-9841-408a-b01d-6f7d4d8da4fc')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['medicines'] == 'Aspirin')]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "8f4e4d95-57fc-4a94-a2d3-5a76ca29457d"
+}
+
+2024-04-09T11:12:44.968+08:00  INFO 21842 --- [tp1533375298-58] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Host: []
+Content-Length: [300]
+Content-Type: [text/plain; charset=UTF-8]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/17.0.10)]
+{
+  "id" : "9603a8da-afd4-460a-a233-925d24c0d670",
+  "request" : {
+    "url" : "/appointment/deleteMedicine",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 200,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "9603a8da-afd4-460a-a233-925d24c0d670"
+}
+
+2024-04-09T11:12:44.971+08:00  INFO 21842 --- [tp1533375298-63] WireMock                                 : Admin request received:
+127.0.0.1 - POST /mappings
+
+Host: []
+Content-Length: [300]
+Content-Type: [text/plain; charset=UTF-8]
+Connection: [keep-alive]
+User-Agent: [Apache-HttpClient/5.1.3 (Java/17.0.10)]
+{
+  "id" : "31b9e757-4d05-4dfe-981d-fb6e94444ed4",
+  "request" : {
+    "url" : "/appointment/createMedicine",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 201,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "31b9e757-4d05-4dfe-981d-fb6e94444ed4"
+}
+
+2024-04-09T11:12:44.972+08:00  INFO 21842 --- [           main] o.s.c.contract.stubrunner.StubServer     : Started stub server for project [nl.nl0e0:medicine-microservice:0.0.1-SNAPSHOT:stubs] on port 8083 with [3] mappings
+2024-04-09T11:12:44.972+08:00  INFO 21842 --- [           main] o.s.c.c.stubrunner.StubRunnerExecutor    : All stubs are now running RunningStubs [namesAndPorts={nl.nl0e0:medicine-microservice:0.0.1-SNAPSHOT:stubs=8083}]
+2024-04-09T11:12:44.973+08:00  WARN 21842 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'batchStubRunner' of type [org.springframework.cloud.contract.stubrunner.BatchStubRunner] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [batchStubRunnerBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-04-09T11:12:45.036+08:00  INFO 21842 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-09T11:12:45.122+08:00  INFO 21842 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@34c07ecc
+2024-04-09T11:12:45.123+08:00  INFO 21842 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-09T11:12:45.148+08:00  INFO 21842 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-09T11:12:45.177+08:00  INFO 21842 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-04-09T11:12:45.197+08:00  INFO 21842 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-09T11:12:45.329+08:00  INFO 21842 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-09T11:12:45.963+08:00  INFO 21842 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-09T11:12:45.965+08:00  INFO 21842 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-09T11:12:46.093+08:00  INFO 21842 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-09T11:12:46.398+08:00  WARN 21842 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-09T11:12:46.566+08:00  INFO 21842 --- [           main] o.s.c.c.v.m.i.ContractVerifierMessaging  : The message verifier sender implementation is of type [class org.springframework.cloud.contract.verifier.messaging.noop.NoOpStubMessages]
+2024-04-09T11:12:46.566+08:00  INFO 21842 --- [           main] o.s.c.c.v.m.i.ContractVerifierMessaging  : The message verifier receiver implementation is of type [class org.springframework.cloud.contract.verifier.messaging.noop.NoOpStubMessages]
+2024-04-09T11:12:46.575+08:00  INFO 21842 --- [           main] o.s.c.c.v.tests.ContractVerifierTest     : Started ContractVerifierTest in 8.581 seconds (process running for 9.192)
+2024-04-09T11:12:47.003+08:00  INFO 21842 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-04-09T11:12:47.003+08:00  INFO 21842 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-04-09T11:12:47.004+08:00  INFO 21842 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+]]></system-out>
+  </testcase>
+  <testcase name="validate_getAppointmentByOwnerName" classname="org.springframework.cloud.contract.verifier.tests.ContractVerifierTest" time="0.103">
+    <system-out><![CDATA[2024-04-09T11:12:47.218+08:00  INFO 21842 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-04-09T11:12:47.218+08:00  INFO 21842 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-04-09T11:12:47.218+08:00  INFO 21842 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+]]></system-out>
+  </testcase>
+  <testcase name="validate_createAppointments" classname="org.springframework.cloud.contract.verifier.tests.ContractVerifierTest" time="0.071">
+    <system-out><![CDATA[2024-04-09T11:12:47.320+08:00  INFO 21842 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-04-09T11:12:47.321+08:00  INFO 21842 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-04-09T11:12:47.321+08:00  INFO 21842 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-04-09T11:12:47.371+08:00  INFO 21842 --- [qtp348102608-41] WireMock                                 : Request received:
+127.0.0.1 - POST /appointment/createConsultation
+
+Accept: [application/json, application/*+json]
+Content-Type: [text/plain;charset=ISO-8859-1]
+User-Agent: [Java/17.0.10]
+Host: [localhost:8081]
+Connection: [keep-alive]
+Content-Length: [36]
+5b1e55ef-8ad2-43f8-9218-6821b6711b8a
+
+
+Matched response definition:
+{
+  "status" : 201,
+  "transformers" : [ "response-template", "spring-cloud-contract" ]
+}
+
+Response:
+HTTP/1.1 201
+Matched-Stub-Id: [5fd9c6e6-5725-4e3f-b707-527f5913f803]
+
+2024-04-09T11:12:47.376+08:00  INFO 21842 --- [qtp863768292-53] WireMock                                 : Request received:
+127.0.0.1 - POST /appointment/createPayment
+
+Accept: [application/json, application/*+json]
+Content-Type: [text/plain;charset=ISO-8859-1]
+User-Agent: [Java/17.0.10]
+Host: [localhost:8082]
+Connection: [keep-alive]
+Content-Length: [36]
+73fb1132-e21e-40be-815c-773c079fcd9e
+
+
+Matched response definition:
+{
+  "status" : 201,
+  "transformers" : [ "response-template", "spring-cloud-contract" ]
+}
+
+Response:
+HTTP/1.1 201
+Matched-Stub-Id: [7b25a36d-14b3-4487-9d72-90ef30a074d7]
+
+2024-04-09T11:12:47.378+08:00  INFO 21842 --- [tp1533375298-58] WireMock                                 : Request received:
+127.0.0.1 - POST /appointment/createMedicine
+
+Accept: [application/json, application/*+json]
+Content-Type: [text/plain;charset=ISO-8859-1]
+User-Agent: [Java/17.0.10]
+Host: [localhost:8083]
+Connection: [keep-alive]
+Content-Length: [36]
+d8ae8e3d-c6cc-4b72-9303-0e0eccdf0764
+
+
+Matched response definition:
+{
+  "status" : 201,
+  "transformers" : [ "response-template", "spring-cloud-contract" ]
+}
+
+Response:
+HTTP/1.1 201
+Matched-Stub-Id: [31b9e757-4d05-4dfe-981d-fb6e94444ed4]
+
+-----------------
+Create Appointment Success.
+Record ID: 1aca41f6-d87c-4bda-9236-8546e11003c9
+Appointment ID: f27025a5-c527-43fc-8ce8-282aaefffb03
+Consultation ID: 5b1e55ef-8ad2-43f8-9218-6821b6711b8a
+Payment ID: 5b1e55ef-8ad2-43f8-9218-6821b6711b8a
+Medicine ID: d8ae8e3d-c6cc-4b72-9303-0e0eccdf0764
+-----------------
+]]></system-out>
+  </testcase>
+  <testcase name="validate_setState" classname="org.springframework.cloud.contract.verifier.tests.ContractVerifierTest" time="0.022">
+    <system-out><![CDATA[2024-04-09T11:12:47.391+08:00  INFO 21842 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-04-09T11:12:47.391+08:00  INFO 21842 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-04-09T11:12:47.391+08:00  INFO 21842 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
 ]]></system-out>
   </testcase>
 </testsuite>

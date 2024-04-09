@@ -27,7 +27,7 @@ public class ConsultationController {
 
     //給醫生查看病歷
     @GetMapping("/appointment/consultation/{recordId}")
-    public ResponseEntity<?> checkConsultation(@PathVariable String recordId){
+    public ResponseEntity<?> checkConsultation(@PathVariable("recordId") String recordId){
         CheckConsultationDTO checkConsultationDTO = consultationService.checkConsultation(recordId);
         return ResponseEntity.status(HttpStatus.OK).body(checkConsultationDTO);
     }
@@ -37,7 +37,7 @@ public class ConsultationController {
     public ResponseEntity<?> updateConsultation(@RequestBody UpdateConsultationDTO updateConsultationDTO){
         System.out.println("updateConsultationDTO Object in Controller\n" + updateConsultationDTO);
         consultationService.updateConsultation(updateConsultationDTO);
-        return ResponseEntity.status(HttpStatus.CREATED).build();
+        return ResponseEntity.status(HttpStatus.OK).build();
     }
 
     //讓 Appointment microservice 可以新增病歷

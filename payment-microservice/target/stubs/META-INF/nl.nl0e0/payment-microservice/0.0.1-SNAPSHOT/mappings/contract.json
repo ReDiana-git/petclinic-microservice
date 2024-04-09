@@ -1,0 +1,12 @@
+{
+  "id" : "7b25a36d-14b3-4487-9d72-90ef30a074d7",
+  "request" : {
+    "url" : "/appointment/createPayment",
+    "method" : "POST"
+  },
+  "response" : {
+    "status" : 201,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "7b25a36d-14b3-4487-9d72-90ef30a074d7"
+}

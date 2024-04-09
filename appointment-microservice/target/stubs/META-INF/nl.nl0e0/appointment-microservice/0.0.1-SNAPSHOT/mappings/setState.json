@@ -1,0 +1,22 @@
+{
+  "id" : "f435bbf8-2617-4faa-88e6-aeb31d5c975b",
+  "request" : {
+    "url" : "/appointment/setState",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['recordId'] == '317498db-9841-408a-b01d-6f7d4d8da4fc')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['state'] == 'payment')]"
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "f435bbf8-2617-4faa-88e6-aeb31d5c975b"
+}
