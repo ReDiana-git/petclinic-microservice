@@ -41,7 +41,7 @@ public class ConsumerTest {
     @Test
     public void testConsumerService() throws Exception {
         // 使用 MockMvc 调用消费者端的端点
-        // 消费者端的服务将使用存根来模拟生产者端的响应
+        // 消費者端的服務將使用stub來模擬provider
         appointmentRestTemplate.createConsultation("1234");
 
     }
